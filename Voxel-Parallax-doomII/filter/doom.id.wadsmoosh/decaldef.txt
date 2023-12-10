@@ -1,0 +1,2 @@
+generator CheelloChaingunGuy BulletChip
+generator CheelloFatShot Scorch

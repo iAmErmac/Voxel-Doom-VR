@@ -22,6 +22,7 @@ Voxel Doom II is the follow up to 2022's award-winning Voxel Doom. This is a new
 
 ## Whats updated in VR mod
 * Made compatible for QuestZDoom (which is based on LZDoom v3.88)
+* Now supports Wadsmooshed doom wad
 * Sprite shadow and blob shadow optimized for VR to reduce spawning excessive actors
 
 ## Installation
