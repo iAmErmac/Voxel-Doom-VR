@@ -90,7 +90,7 @@ mixin class CheelloMonsterMixin
 				&& Target
 				&& (InStateSequence(curState, SeeState) || InStateSequence(curState, MeleeState) || InStateSequence(curState, MissileState)))
 			{
-				A_SetPitch(PitchTo(Target, Height * 0.5, Target.Height * 0.5), SPF_INTERPOLATE);
+				A_SetPitch(GetPitchTo(self, Target, Height * 0.5, Target.Height * 0.5), SPF_INTERPOLATE);
 			}
 		}
 
@@ -185,5 +185,19 @@ mixin class CheelloMonsterMixin
 	{
 		A_FaceTarget();
 		invoker.isFacingTarget = false;
+	}	
+	
+	private double GetPitchTo(Actor source, Actor target, double zOfs = 0, double targZOfs = 0, bool absolute = false) const
+	{
+		Vector3 origin = (source.pos.xy, source.pos.z - source.floorClip + zOfs);
+		Vector3 dest = (target.pos.xy, target.pos.z - target.floorClip + targZOfs);
+
+		Vector3 diff;
+		if (!absolute)
+			diff = level.Vec3Diff(origin, dest);
+		else
+			diff = dest - origin;
+
+		return -atan2(diff.z, diff.xy.Length());
 	}
 }

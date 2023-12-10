@@ -48,7 +48,7 @@ class CheelloVoxDoom2Handler : EventHandler
 	{
 		for (int i = 0; i < Level.Lines.Size(); i++)
 		{
-			let ln = Level.Lines[i];
+			Line ln = Level.Lines[i];
 			if (ln)
 			{
 				for (int j = ln.front; j <= ln.back; j++)

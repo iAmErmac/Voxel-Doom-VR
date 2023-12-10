@@ -32,6 +32,7 @@ class CheelloIconOfSin : Actor
 		Radius 16;
 		Height 32;
 		-SOLID
+		+NOGRAVITY
 	}
 
 	//===========================================================================
@@ -86,17 +87,19 @@ class CheelloIconOfSin : Actor
 			let mo = Actor.Spawn(cls, Pos, NO_REPLACE);
 			if (mo)
 			{
-				Vector3 sPos = (-cos(Angle) * hOffset, -sin(Angle) * hOffset, vOffset);
+				Vector3 sPos = (-cos(Angle) * hOffset - 5, -sin(Angle) * hOffset, vOffset + 128);
 				mo.Angle = Angle;
-				mo.WorldOffset = sPos;
+				let WorldOffset = sPos;
 
-				CheelloIconOfSin(mo).savedWorldOffset = mo.WorldOffset;
+				CheelloIconOfSin(mo).savedWorldOffset = WorldOffset;
 				CheelloIconOfSin(mo).debugWorldOffset =
 				(
-					mo.WorldOffset.X + cos(mo.Angle + 90.) * (192. * i),
-					mo.WorldOffset.Y + sin(mo.Angle + 90.) * (192. * i),
-					mo.WorldOffset.Z
+					WorldOffset.X + cos(mo.Angle + 90.) * (192. * i),
+					WorldOffset.Y + sin(mo.Angle + 90.) * (192. * i),
+					WorldOffset.Z
 				);
+				
+				mo.SetOrigin(pos+WorldOffset, false);
 
 				StateLabel stl;
 
@@ -129,7 +132,7 @@ class CheelloIconOfSin : Actor
 
 	protected void ModPosForDebug(void)
 	{
-		WorldOffset = !cheello_icondebug ? savedWorldOffset : debugWorldOffset;
+		let WorldOffset = !cheello_icondebug ? savedWorldOffset : debugWorldOffset;
 
 		// haxxxxxxx
 		if (self is "CheelloIconOfSinBackgroundHorns" || self is "CheelloIconOfSinBackgroundForehead")
