@@ -10,6 +10,55 @@ mat3 GetTBN(void);
 vec3 GetNormMap(mat3 tbn, vec2 texcoord);
 vec3 GetSpecMap(vec2 texcoord);
 vec2 ParallaxMap(mat3 tbn);
+vec3 GetBumpedNormal(mat3 tbn, vec2 texcoord);
+
+//===========================================================================
+//
+//
+//
+//===========================================================================
+
+Material ProcessMaterial()
+{
+    mat3 tbn = GetTBN();
+    vec2 texCoord = ParallaxMap(tbn);
+
+    Material material;
+    material.Base = getTexel(texCoord);
+    material.Normal = GetBumpedNormal(tbn, texCoord);
+#if defined(SPECULAR)
+    material.Specular = texture(speculartexture, texCoord).rgb;
+    material.Glossiness = uSpecularMaterial.x;
+    material.SpecularLevel = uSpecularMaterial.y;
+#endif
+#if defined(PBR)
+    material.Metallic = texture(metallictexture, texCoord).r;
+    material.Roughness = texture(roughnesstexture, texCoord).r;
+    material.AO = texture(aotexture, texCoord).r;
+#endif
+#if defined(BRIGHTMAP)
+    material.Bright = texture(brighttexture, texCoord);
+#endif
+    return material;
+}
+
+//===========================================================================
+//
+//
+//
+//===========================================================================
+
+vec3 GetBumpedNormal(mat3 tbn, vec2 texcoord)
+{
+#if defined(NORMALMAP)
+    vec3 map = texture(normaltexture, texcoord).xyz;
+    map = map * 255./127. - 128./127.; // Math so "odd" because 0.5 cannot be precisely described in an unsigned format
+    map.xy *= vec2(0.5, -0.5); // Make normal map less strong and flip Y
+    return normalize(tbn * map);
+#else
+    return normalize(vWorldNormal.xyz);
+#endif
+}
 
 //===========================================================================
 //
