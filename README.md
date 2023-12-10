@@ -2,8 +2,9 @@
 
 ![Voxel Doom 2](https://media.moddb.com/images/downloads/1/262/261802/voxeldoom2.png)
 
-
 Voxel Doom II is the follow up to 2022's award-winning Voxel Doom. This is a new graphics mod that replaces all monsters, weapons, props and items with fully 3d voxel models. It replaces all monsters from both Doom and Doom II.
+
+This mod is modified by Ermac to add backward compatibility for LZDoom and QuestZDoom. It also fixes wadsmoosh compatibility.
 
 - Doomworld Discussion: https://www.doomworld.com/forum/topic/130853-voxel-doom/
 - MODDB: https://www.moddb.com/mods/voxel-doom-ii
@@ -62,8 +63,14 @@ To install:
 * [Bolognese Universal Gore:](https://www.moddb.com/mods/brutal-doom/downloads/bolognese-gore-mod-v20)
   - For satisfying gores and gibs
 
-* [Nash's Gore Mod: Vengeance Edition:](https://github.com/iAmErmac/Hyper-V)
+* [Nash's Gore Mod: Vengeance Edition:](https://www.moddb.com/mods/nashs-gore-mod-vengeance-edition)
   - Alternate gore mod. Now also comes with a voxel addon
+
+* [Universal Voxel Weapons:](https://github.com/iAmErmac/Universal_Doom_VoxelWeapons_VR)
+  - Voxelized Doom weapons for VR. Now comes with 3 sets of weapon models
+
+* [Liquid Textures Pack:](https://www.moddb.com/games/doom-ii/addons/doom-liquid-texture-pack)
+  - 3D textures for all the liquids in Doom games
 
 ## Credits
 
