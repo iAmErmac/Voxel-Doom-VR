@@ -1,0 +1,170 @@
+class YOSSDummy: Actor
+{
+ 	States
+	{
+	Spawn:
+		YOSS A 1;
+		Stop;
+	}
+}
+
+class YPOSDummy: Actor
+{
+ 	States
+	{
+	Spawn:
+		YPOS A 1;
+		Stop;
+	}
+}
+
+class ZPOSDummy: Actor
+{
+ 	States
+	{
+	Spawn:
+		ZPOS A 1;
+		Stop;
+	}
+}
+
+class ZROODummy: Actor
+{
+ 	States
+	{
+	Spawn:
+		ZROO A 1;
+		Stop;
+	}
+}
+
+class ZARGDummy: Actor
+{
+ 	States
+	{
+	Spawn:
+		ZARG A 1;
+		Stop;
+	}
+}
+
+class ZKULDummy: Actor
+{
+ 	States
+	{
+	Spawn:
+		ZKUL A 1;
+		Stop;
+	}
+}
+
+class ZEADDummy: Actor
+{
+ 	States
+	{
+	Spawn:
+		ZEAD A 1;
+		Stop;
+	}
+}
+
+class ZAINDummy: Actor
+{
+ 	States
+	{
+	Spawn:
+		ZAIN A 1;
+		Stop;
+	}
+}
+
+class ZOSSDummy: Actor
+{
+ 	States
+	{
+	Spawn:
+		ZOSS A 1;
+		Stop;
+	}
+}
+
+class ZOS2Dummy: Actor
+{
+ 	States
+	{
+	Spawn:
+		ZOS2 A 1;
+		Stop;
+	}
+}
+
+class ZKELDummy: Actor
+{
+ 	States
+	{
+	Spawn:
+		ZKEL A 1;
+		Stop;
+	}
+}
+
+class ZATTDummy: Actor
+{
+ 	States
+	{
+	Spawn:
+		ZATT A 1;
+		Stop;
+	}
+}
+
+class ZILEDummy: Actor
+{
+ 	States
+	{
+	Spawn:
+		ZILE A 1;
+		ZIL2 A 1;
+		Stop;
+	}
+}
+
+class ZSPIDummy: Actor
+{
+ 	States
+	{
+	Spawn:
+		ZSPI A 1;
+		Stop;
+	}
+}
+
+class ZYBRDummy: Actor
+{
+ 	States
+	{
+	Spawn:
+		ZYBR A 1;
+		Stop;
+	}
+}
+
+class ZPIDDummy: Actor
+{
+ 	States
+	{
+	Spawn:
+		ZPID A 1;
+		Stop;
+	}
+}
+
+class ZSWVDummy: Actor
+{
+ 	States
+	{
+	Spawn:
+		ZSWV A 1;
+		Stop;
+	}
+}

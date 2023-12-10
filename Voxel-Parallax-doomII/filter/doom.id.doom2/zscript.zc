@@ -1,0 +1,16 @@
+//===========================================================================
+//
+// CHEELLO VOXEL DOOM
+//
+// ZScript code: Copyright (C) 2022 - 2023 Nash Muhandes
+//
+// License: MIT
+//
+//===========================================================================
+
+version "4.10"
+
+#include "zscript/CheelloVox/CheelloMonsterMixin.zc"
+#include "zscript/CheelloVox/CheelloMonstersDoom2.zc"
+#include "zscript/CheelloVox/CheelloVoxDoom2Handler.zc"
+#include "zscript/CheelloVox/CheelloIconOfSin.zc"

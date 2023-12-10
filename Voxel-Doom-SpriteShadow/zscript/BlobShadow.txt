@@ -1,0 +1,133 @@
+
+Class BlobShadowList : CustomInventory
+{
+	transient Array<Actor> shadows;
+	transient Array<Actor> itemShadows;
+	
+	Default
+	{
+		Inventory.maxamount 1;
+		+INVENTORY.UNDROPPABLE
+		+INVENTORY.UNTOSSABLE
+		+INVENTORY.AUTOACTIVATE
+	}
+	
+	Actor getBlobShadowCaster(int num)
+	{
+		if(!num) return NULL;
+		if(num > shadows.size() - 1)
+		{
+			let mo = Actor.Spawn("Z_BlobShadow");
+			mo.bInvisible = true;
+			shadows.push(mo);
+			int count = shadows.size() - 1;
+			if(shadows[count]) Z_BlobShadow(shadows[count]).lightID = "mShadow"..count;
+			return mo;
+		}
+		else
+		{
+			return shadows[num];
+		}
+	}
+	
+	Actor getItemShadowCaster(int num)
+	{
+		if(!num) return NULL;
+		if(num > itemShadows.size() - 1)
+		{
+			let mo = Actor.Spawn("Z_ItemShadow");
+			mo.bInvisible = true;
+			itemShadows.push(mo);
+			int count = itemShadows.size() - 1;
+			if(itemShadows[count]) Z_ItemShadow(itemShadows[count]).lightID = "mShadow"..count;
+			return mo;
+		}
+		else
+		{
+			return itemShadows[num];
+		}
+	}
+	
+	void hideBlobShadows()
+	{
+		if(!shadows.size()) return;
+	
+		for(int i = 0; i < shadows.size(); i++)
+		{
+			Z_BlobShadow(shadows[i]).caster = NULL;
+			Z_BlobShadow(shadows[i]).bInvisible = true;
+		}
+	}
+	
+	void cleanupBlobShadows()
+	{
+		Playerinfo p = Players[ConsolePlayer];
+		if(!p) return;
+		
+		bool blobShadowEnabled = CVar.GetCVar("cl_monstershadowtype", p).GetInt();
+		int maxMonsterShadows = blobShadowEnabled ? CVar.GetCVar("cl_maxmonstershadows", p).GetInt() : 0;
+		
+		if(maxMonsterShadows < shadows.size()) console.printf("%d excess actors", shadows.size() - maxMonsterShadows);
+		
+		if(!blobShadowEnabled && maxMonsterShadows < shadows.size())
+		{
+			for(int i = maxMonsterShadows; i < shadows.size(); i++)
+			{
+				let mo = Z_BlobShadow(shadows[i]);
+				if(mo) mo.selfDestruct();
+			}
+		}
+		
+		if(!maxMonsterShadows)
+			shadows.clear();
+		else if(maxMonsterShadows < shadows.size())
+			shadows.Resize(maxMonsterShadows);
+	}
+	
+	void hideItemShadows()
+	{
+		if(!itemShadows.size()) return;
+	
+		for(int i = 0; i < itemShadows.size(); i++)
+		{
+			Z_ItemShadow(itemShadows[i]).bInvisible = true;
+		}
+	}
+	
+	void cleanupItemSHadows()
+	{
+		Playerinfo p = Players[ConsolePlayer];
+		if(!p) return;
+		
+		int maxItemShadows = CVar.GetCVar("cl_maxitemshadows", p).GetInt();
+		
+		if(maxItemShadows < itemShadows.size()) console.printf("%d excess actors", itemShadows.size() - maxItemShadows);
+		
+		if(maxItemShadows < itemShadows.size())
+		{
+			for(int i = maxItemShadows; i < itemShadows.size(); i++)
+			{
+				let mo = Z_ItemShadow(itemShadows[i]);
+				if(mo) mo.selfDestruct();
+			}
+		}
+		
+		if(!maxItemShadows)
+			itemShadows.clear();
+		else if(maxItemShadows < itemShadows.size())
+			itemShadows.Resize(maxItemShadows);
+	}
+	
+	States
+	{
+	Use:
+		TNT1 A 0;
+		Fail;
+	Pickup:
+		TNT1 A 0
+		{
+			return true;
+		}
+		Stop;
+	}
+}

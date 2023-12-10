@@ -1,0 +1,45 @@
+[enu default]
+
+// { ENGLISH (US) LANGUAGE DEFINITION }
+
+OPTMNU_VOXELDOOMOPTS = "VOXEL DOOM Options";
+OPTMNU_VOXELDOOMWEAPONSOPTS = "Voxel weapons models options";
+
+VOXELDOOMMNU_VOXELONOFF = "Voxels Rendering Active";
+VOXELDOOMMNU_SPINITEMS = "Spinning items";
+VOXELDOOMMNU_SPINEYE = "Look-at-player Evil Eye for SIGIL (must restart game)";
+VOXELDOOMMNU_SMOOTHDEMONS = "Smooth Rotating Demons";
+
+OPTVAL_VOXELDOOM_SPINALL = "All items";
+
+OPTVAL_VOXELDOOM_SPIN_NODROPPED = "Exclude dropped items";
+
+OPTMNU_VOXELDOOMWEAPONOPTS = "Voxel Doom Weapons";
+
+VOXELDOOMMNU_WEAPONONOFF = "Use voxel models for the weapons";
+VOXELDOOMMNU_WEAPONONCLOSE = "Physical weapon";
+VOXELDOOMMNU_WEAPONMOVE = "Weapon type of movement";
+
+OPTVAL_WEAPONDISTANCE="Distance from center";
+
+OPTVAL_WEAPONFAR = "Non interacting, as in Classic Doom";
+OPTVAL_WEAPONCLOSE = "Allow weapon to hit walls, floors, monsters, etc";
+OPTVAL_WEAPONAWAYDISTANCE = "Distance from face";
+OPTVAL_WEAPONAWAYHEIGHT = "Height when closer";
+
+OPTVAL_WEAPONPHASE = "Weapon ahead or behind player movement";
+
+OPTVAL_WEAPONRENDINT = "Rendering Interpolation";
+
+
+
+VOXELDOOMMNU_SMOOTHDEMONSON = "Activate Smooth Rotating Demons";
+VOXELDOOMMNU_SMOOTHDEMONSBITE = "Demon attack face target";
+
+OPTMNU_VOXELDOOMICONMNU = "Voxel Doom Icon of Sin";
+VOXELDOOMMNU_ICONONOFF = "Activate Voxel Icon of Sin";
+VOXELDOOMMNU_ICONALIGN = "Align Icon of Sin";
+VOXELDOOMMNU_ICONOFFSET = "Fine Alignment";
+
+OPTVAL_RIGHT = "Right";
+OPTVAL_LEFT = "Left";

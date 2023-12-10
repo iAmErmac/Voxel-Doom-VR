@@ -1,0 +1,7 @@
+version "3.7"
+
+#include "zscript/SpriteShadow.txt"
+#include "zscript/ItemShadow.txt"
+#include "zscript/BlobShadow.txt"
+#include "zscript/SpriteShadowMenu.txt"
+#include "zscript/ActorDummies.txt"

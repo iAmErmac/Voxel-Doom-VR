@@ -1,0 +1,34 @@
+[enu default]
+
+OPTMNU_SPRITESHADOW = "Voxel Doom Shadow Options";
+SPRITESHADOWMNU_TITLE = "Voxel Doom Shadow Options";
+SPRITESHADOWMNU_OPTIMIZE_TITLE = "Monster Shadow Options";
+SPRITESHADOWMNU_ENABLESHADOW = "Monster Shadows";
+SPRITESHADOWMNU_HELPTEXT_ENABLESHADOW = "Toggle shadows for monsters";
+SPRITESHADOWMNU_MAXSHADOWDISTANCE = "Max Shadow Distance";
+SPRITESHADOWMNU_HELPTEXT_MAXSHADOWDISTANCE = "Maximum distance to show shadows";
+SPRITESHADOWMNU_MAXSHADOWS = "Max Shadows";
+SPRITESHADOWMNU_HELPTEXT_MAXSHADOWS = "Maximum number of shadows to show";
+
+SPRITESHADOWMNU_SHADOWTYPE = "Monster Shadow Type";
+SPRITESHADOWMNU_SHADOWTYPE_SPRITE = "Sprite Shadow";
+SPRITESHADOWMNU_SHADOWTYPE_BLOB = "Blob Shadow";
+SPRITESHADOWMNU_HELPTEXT_SHADOWTYPE = "Sprite Shadow uses sprites and Blob Shadow uses dynamic lights to create shadows";
+SPRITESHADOWMNU_UPDATEDELAY = "Shadow Update Delay";
+SPRITESHADOWMNU_HELPTEXT_UPDATEDELAY = "Delay in sec to update shadows for nearby monsters";
+SPRITESHADOWMNU_DELETE = "Delete on Death";
+SPRITESHADOWMNU_HELPTEXT_DELETE = "Delete shadows beneath monsters when they die";
+SPRITESHADOWMNU_DELETE_DELAY = "Delete Delay";
+SPRITESHADOWMNU_HELPTEXT_DELETE_DELAY = "How many seconds to wait before the shadows get deleted";
+
+SPRITESHADOWMNU_BLOBSHADOW_OPTION_TITLE = "Blob Shadow Options";
+SPRITESHADOWMNU_BLOBSHADOW = "Blob Shadow Style";
+SPRITESHADOWMNU_BLOBSHADOW_SOLID = "Solid Blob Shadow";
+SPRITESHADOWMNU_BLOBSHADOW_FADED = "Faded Blob Shadow";
+SPRITESHADOWMNU_HELPTEXT_BLOBSHADOW = "Solid circular or faded out blob shadow";
+
+SPRITESHADOWMNU_OPTIMIZE_ITEMSHADOW_TITLE = "Item Shadow Options";
+SPRITESHADOWMNU_ITEMSHADOW = "Item Shadows";
+SPRITESHADOWMNU_HELPTEXT_ITEMSHADOW = "Toggle shadows for items";
+SPRITESHADOWMNU_ITEMMINRAD = "Minimum Size";
+SPRITESHADOWMNU_HELPTEXT_ITEMMINRAD = "Minimum size for an item blow shadow";

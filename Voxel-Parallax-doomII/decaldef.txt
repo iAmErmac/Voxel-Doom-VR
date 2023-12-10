@@ -1,0 +1,4 @@
+generator CheelloZombieMan BulletChip
+generator CheelloShotgunGuy BulletChip
+generator CheelloSpiderMastermind BulletChip
+generator CheelloRocket Scorch

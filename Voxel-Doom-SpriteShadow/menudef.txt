@@ -1,0 +1,41 @@
+AddOptionMenu "OptionsMenu"
+{
+	Submenu "$OPTMNU_SPRITESHADOW", "SpriteShadowMenu"
+}
+
+OptionValue "spriteshadow_type_select" {
+	0, "$SPRITESHADOWMNU_SHADOWTYPE_SPRITE"
+	1, "$SPRITESHADOWMNU_SHADOWTYPE_BLOB"
+}
+
+OptionValue "spriteshadow_blob_faded" {
+	0, "$SPRITESHADOWMNU_BLOBSHADOW_SOLID"
+	1, "$SPRITESHADOWMNU_BLOBSHADOW_FADED"
+}
+
+OptionMenu "SpriteShadowMenu"
+{
+	Class "SpriteShadowMenu"
+	Title "$SPRITESHADOWMNU_TITLE"
+	Position -32
+
+	StaticText ""
+	SpriteShadowOption "$SPRITESHADOWMNU_BLOBSHADOW",			"$SPRITESHADOWMNU_HELPTEXT_BLOBSHADOW",			"cl_blobshadowfaded", 		"spriteshadow_blob_faded"
+	SpriteShadowSlider "$SPRITESHADOWMNU_UPDATEDELAY",			"$SPRITESHADOWMNU_HELPTEXT_UPDATEDELAY",		"cl_voxelshadowrefresh",	0.0, 3.0, 0.1, 1
+
+	StaticText ""
+	StaticText "$SPRITESHADOWMNU_OPTIMIZE_TITLE", "Gold"
+	SpriteShadowOption "$SPRITESHADOWMNU_ENABLESHADOW",			"$SPRITESHADOWMNU_HELPTEXT_ENABLESHADOW",		"cl_monstershadow", 		"OnOff"
+	SpriteShadowOption "$SPRITESHADOWMNU_SHADOWTYPE",			"$SPRITESHADOWMNU_HELPTEXT_SHADOWTYPE",			"cl_monstershadowtype", 	"spriteshadow_type_select"
+	SpriteShadowSlider "$SPRITESHADOWMNU_MAXSHADOWDISTANCE",	"$SPRITESHADOWMNU_HELPTEXT_MAXSHADOWDISTANCE",	"cl_monstershadowdistance",	0, 4000, 100, 0
+	SpriteShadowSlider "$SPRITESHADOWMNU_MAXSHADOWS",			"$SPRITESHADOWMNU_HELPTEXT_MAXSHADOWS",			"cl_maxmonstershadows",		0, 200, 5, 0
+	SpriteShadowOption "$SPRITESHADOWMNU_DELETE",				"$SPRITESHADOWMNU_HELPTEXT_DELETE",				"cl_voxelshadowdelete", 	"YesNo"
+	SpriteShadowSlider "$SPRITESHADOWMNU_DELETE_DELAY",			"$SPRITESHADOWMNU_HELPTEXT_DELETE_DELAY",		"cl_voxelshadowdeletedelay", 1, 60, 1, 0
+
+	StaticText ""
+	StaticText "$SPRITESHADOWMNU_OPTIMIZE_ITEMSHADOW_TITLE", "Gold"
+	SpriteShadowOption "$SPRITESHADOWMNU_ITEMSHADOW",			"$SPRITESHADOWMNU_HELPTEXT_ITEMSHADOW",			"cl_itemshadow", 			"OnOff"
+	SpriteShadowSlider "$SPRITESHADOWMNU_ITEMMINRAD",			"$SPRITESHADOWMNU_HELPTEXT_ITEMMINRAD",			"cl_itemshadowminrad",		5, 30, 1, 0
+	SpriteShadowSlider "$SPRITESHADOWMNU_MAXSHADOWDISTANCE",	"$SPRITESHADOWMNU_HELPTEXT_MAXSHADOWDISTANCE",	"cl_itemshadowdistance",	0, 4000, 100, 0
+	SpriteShadowSlider "$SPRITESHADOWMNU_MAXSHADOWS",			"$SPRITESHADOWMNU_HELPTEXT_MAXSHADOWS",			"cl_maxitemshadows",		0, 200, 5, 0
+}

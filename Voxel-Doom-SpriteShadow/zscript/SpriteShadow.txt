@@ -1,0 +1,653 @@
+//===========================================================================
+//
+// SpriteShadow
+//
+// Duke3D-style Actor Shadows
+//
+// Written by Nash Muhandes
+//
+// Feel free to use this in your mods. No need to ask for my permission!
+//
+//===========================================================================
+
+class Z_SpriteShadow : Actor
+{
+	Default
+	{
+		RenderStyle "Stencil";
+		StencilColor "Black";
+		FloatBobPhase 0;
+		+NOBLOCKMAP
+		+NOINTERACTION
+		+NOTONAUTOMAP
+	}
+
+	Actor caster;
+	Inventory casterHasShadow;
+	bool bStopTicking;
+
+	transient CVar cvShadowDistance;
+	double shadowDist;
+
+	//===========================================================================
+	//
+	//
+	//
+	//
+	//===========================================================================
+
+	void UpdateShadowDistance(void)
+	{
+		if (!cvShadowDistance) return;
+		shadowDist = cvShadowDistance.GetFloat();
+	}
+
+	//===========================================================================
+	//
+	//
+	//
+	//
+	//===========================================================================
+
+	override void PostBeginPlay(void)
+	{
+		Playerinfo p = Players[ConsolePlayer];
+		cvShadowDistance = CVar.GetCVar("cl_monstershadowdistance", p);
+		UpdateShadowDistance();
+		Super.PostBeginPlay();
+	}
+
+	override void Tick(void)
+	{
+		if (!bNoTimeFreeze && (globalfreeze || level.Frozen)) return;
+
+		if (!bStopTicking)
+		{
+			Super.Tick();
+			bStopTicking = true;
+			return;
+		}
+		//else if (caster && caster.CheckIfSeen())
+		else if (caster && caster.CheckSightOrRange(shadowDist, true))
+		{
+			return;
+		}
+		else
+		{
+
+			if (caster)
+			{
+				casterHasShadow = caster.FindInventory("Z_ShadeMe");
+				
+				let casterSpriteShadow = getShadowSprite(caster.Sprite);
+				if(casterSpriteShadow == -1) return; //custom shadow sprite not found
+
+				// filter your own shadow and hide it from your first person view
+				if (caster is "PlayerPawn" && players[consoleplayer].mo == caster)
+				{
+					if (players[consoleplayer].camera == players[consoleplayer].mo && !(caster.player.cheats & CF_CHASECAM))
+					{
+						bInvisible = true;
+					}
+					else
+					{
+						bInvisible = false;
+					}
+				}
+				else
+				{
+					if (players[consoleplayer].camera.CheckLocalView(consoleplayer))
+					{
+						// hide shadow if you are under the monster
+						if (players[consoleplayer].camera.Pos.Z
+							+ (players[consoleplayer].camera.player ?
+								players[consoleplayer].camera.player.viewheight
+								: players[consoleplayer].camera.GetCameraHeight())
+							< Pos.Z)
+							bInvisible = true;
+
+						// always visible for monsters
+						else bInvisible = false;
+					}
+					else
+					{
+						return;
+					}
+				}
+
+				// sync size of bounding box
+				if (Radius != caster.Radius || Height != caster.Height)
+				{
+					A_SetSize(caster.Radius, caster.Height);
+				}
+
+				// sync sprites and angle
+				Sprite = casterSpriteShadow;
+				Frame = caster.Frame;
+				Angle = caster.Angle;
+
+				// sync alpha
+				Alpha = caster.Alpha * 0.5;
+
+				// sync scale
+				Scale.X = caster.Scale.X;
+				Scale.Y = caster.Scale.Y * 0.1;
+
+				// sync position (offset shadow away from local camera)
+				if (!players[consoleplayer].camera) return;
+				Vector3 sPos = (
+					caster.Pos.X + cos(players[consoleplayer].camera.Angle) * 0.01,
+					caster.Pos.Y + sin(players[consoleplayer].camera.Angle) * 0.01,
+					caster.FloorZ
+					);
+				SetOrigin(sPos, true);
+
+				return;
+			}
+			else if (!caster || (caster && !casterHasShadow))
+			{
+				// clean-up
+				Destroy();
+				return;
+			}
+		}
+	}
+	
+	int getShadowSprite(spriteID ssprite)
+	{
+		String mo_sprite = ""..ssprite;
+		
+		if(mo_sprite == "POSS") //zombieman
+			mo_sprite = "YOSS";
+		else if(mo_sprite == "SPOS") //shotgunguy
+			mo_sprite = "YPOS";
+		else
+			mo_sprite = "Z"..mo_sprite.Mid(1,3);
+			
+		return GetSpriteIndex(mo_sprite);
+	}
+}
+
+Class Z_BlobShadow : Actor
+{
+	Default
+	{
+		RenderStyle "None";
+		+NOBLOCKMAP
+		+NOINTERACTION
+		+NOTONAUTOMAP
+		+NOBLOOD
+		+NOCLIP
+	}
+	
+	String lightID;
+	Actor caster;
+	bool blobFaded;
+	double blobRadius;
+	int BLOBSHADOW_FLAGS;
+	
+	override void PostBeginPlay()
+	{
+		updateSettings();
+	}
+	
+	override void Tick()
+	{
+		// hide when no caster to follow
+		if(!caster || bInvisible)
+		{
+			SetOrigin((-9999,-9999,-9999), false);
+			return;
+		}
+		
+		SetOrigin((caster.pos.xy, caster.FloorZ+5), false);
+		blobRadius = caster.radius;
+		if(!blobFaded) blobRadius = blobRadius * 1/2;
+		A_AttachLight(lightID, DynamicLight.PointLight, "FF FF FF", blobRadius, 0, BLOBSHADOW_FLAGS);
+		
+		// check for settings update
+		if(GetAge() && GetAge() % (5 * 35)) updateSettings();
+		
+		Super.Tick();
+	}
+	
+	void updateSettings()
+	{
+		Playerinfo p = Players[ConsolePlayer];
+		if(!p) return;
+		
+		if(!caster) return;
+		
+		let blobFaded = CVar.GetCVar("cl_blobshadowfaded", p).GetInt();
+		BLOBSHADOW_FLAGS = DYNAMICLIGHT.LF_SUBTRACTIVE | DYNAMICLIGHT.LF_DONTLIGHTSELF | DYNAMICLIGHT.LF_DONTLIGHTACTORS;
+		if(blobFaded) BLOBSHADOW_FLAGS |= DYNAMICLIGHT.LF_ATTENUATE;
+	}
+	
+	void selfDestruct()
+	{
+		A_RemoveLight(lightID);
+		destroy();
+	}
+	
+	States
+	{
+	Spawn:
+		TNT1 A 0;
+		TNT1 A 1;
+		wait;
+	}
+}
+
+//===========================================================================
+//
+//
+//
+//
+//===========================================================================
+
+class Z_ShadeMe : CustomInventory
+{
+	Default
+	{
+		FloatBobPhase 0;
+		Inventory.MaxAmount 1;
+		+INVENTORY.UNDROPPABLE
+		+INVENTORY.UNTOSSABLE
+		+INVENTORY.AUTOACTIVATE
+	}
+
+	Z_SpriteShadow myShadow;
+	bool monsterShadowEnabled;
+	bool monsterShadowDelete;
+	int monsterShadowDeleteDelay;
+	int blobShadow;
+	int blobShadowFaded;
+	int killTimer;
+	int lifeTime;
+	int ticked;
+	string lightID;
+	int count;
+	BlobShadowList bShadowList;
+
+	//===========================================================================
+	//
+	//
+	//
+	//
+	//===========================================================================
+	
+	void updateSettings()
+	{
+		Playerinfo p = Players[ConsolePlayer];
+		if(!p) return;
+		
+		monsterShadowEnabled = CVar.GetCVar("cl_monstershadow", p).GetBool();
+		monsterShadowDelete = CVar.GetCVar("cl_voxelshadowdelete", p).GetBool();
+		monsterShadowDeleteDelay = CVar.GetCVar("cl_voxelshadowdeletedelay", p).GetInt() * 35;
+		blobShadow = CVar.GetCVar("cl_monstershadowtype", p).GetInt();
+		blobShadowFaded = CVar.GetCVar("cl_blobshadowfaded", p).GetInt();
+		
+		bShadowList = BlobShadowList(p.mo.FindInventory("BlobShadowList"));
+	}
+
+	override void PostBeginPlay(void)
+	{
+		updateSettings();
+		Super.PostBeginPlay();
+	}
+
+	override void Tick(void)
+	{
+		if(GetAge() > 1 && !monsterShadowEnabled)
+		{
+			if(myShadow) myShadow.destroy();
+			destroy();
+			return;
+		}
+		
+		// self destruct so we don't need to iterate through all of them to delete
+		if(!lifeTime || lifeTime - ticked == 0)
+		{
+			if(myShadow) myShadow.destroy();
+			destroy();
+			return;
+		}
+		
+		if (!Owner || owner.bShadow) return;
+
+		if (!myShadow && !blobShadow)
+		{
+			// spawn the sprite shadow
+			let mo = Z_SpriteShadow(Spawn("Z_SpriteShadow", Owner.Pos, NO_REPLACE));
+			if (mo)
+			{
+				myShadow = mo;
+				mo.caster = Owner;
+			}
+		}
+		
+		if(blobShadow && !owner.player)
+		{
+			// clear sprite shadow if exists
+			if(myShadow) myShadow.destroy();
+		
+			// spawn the blob shadow
+			let bmo = Z_BlobShadow(bShadowList.getBlobShadowCaster(count));
+			bmo.caster = owner;
+			bmo.bInvisible = false;
+		}
+		
+		if(owner.health <= 0 && monsterShadowDelete) killTimer++;
+		if(killTimer >= monsterShadowDeleteDelay)
+		{
+			if(myShadow) myShadow.destroy();
+			destroy();
+		}
+		
+		ticked++; //this is the counter to self destruct
+		
+		// update settings every 5 sec in case player decides to change shadow type
+		if(GetAge() % int(5 * 35) != 0)
+		{
+			updateSettings();
+		}
+		
+		Super.Tick();
+	}
+
+	//===========================================================================
+	//
+	//
+	//
+	//
+	//===========================================================================
+
+	States
+	{
+	Use:
+		TNT1 A 0;
+		Fail;
+	Pickup:
+		TNT1 A 0
+		{
+			return true;
+		}
+		Stop;
+	}
+}
+
+class Z_ShadeMarker : CustomInventory
+{
+	Default
+	{
+		Inventory.MaxAmount 1;
+		+INVENTORY.UNDROPPABLE
+		+INVENTORY.UNTOSSABLE
+		+INVENTORY.AUTOACTIVATE
+	}
+	
+	override void Tick(void)
+	{
+		if(GetAge() > 1)
+		{
+			self.destroy();
+		}
+		
+		Super.Tick();
+	}
+
+	States
+	{
+	Use:
+		TNT1 A 0;
+		Fail;
+	Pickup:
+		TNT1 A 0
+		{
+			return true;
+		}
+		Stop;
+	}
+}
+
+//===========================================================================
+//
+//
+//
+//
+//===========================================================================
+
+class VoxelShadowHandler : EventHandler
+{
+	transient CVar cvMonsterShadow;
+	transient CVar cvShadowDistance;
+	transient CVar cvMaxShadows;
+	transient CVar cvRefreshTime;
+
+	double shadowDistOld, shadowDistNew;
+
+	override void OnRegister()
+	{
+		Playerinfo p = Players[ConsolePlayer];
+		if(!p) return;
+		
+		cvMonsterShadow = CVar.GetCVar("cl_monstershadow", p);
+		cvShadowDistance = CVar.GetCVar("cl_monstershadowdistance", p);
+		cvMaxShadows = CVar.GetCVar("cl_maxmonstershadows", p);
+		cvRefreshTime = CVar.GetCVar("cl_voxelshadowrefresh", p);
+	}
+
+	//===========================================================================
+	//
+	//
+	// Player-specific stuff
+	//
+	//===========================================================================
+
+	void DoSpawnPlayerShadow(PlayerPawn p)
+	{
+		if (p) p.A_GiveInventory("Z_ShadeMe", 1);
+	}
+
+	void DoRemovePlayerShadow(PlayerPawn p)
+	{
+		if (p)
+		{
+			let shadeMe = Z_ShadeMe(p.FindInventory("Z_ShadeMe"));
+			if (shadeMe) shadeMe.Destroy();
+		}
+	}
+
+	override void PlayerEntered(PlayerEvent e)
+	{
+		let p = players[e.PlayerNumber].mo;
+		if (p) DoSpawnPlayerShadow(p);
+		p.SetInventory("BlobShadowList", 1);
+	}
+
+	override void PlayerRespawned(PlayerEvent e)
+	{
+		let p = players[e.PlayerNumber].mo;
+		if (p) DoSpawnPlayerShadow(p);
+	}
+
+	override void PlayerDied(PlayerEvent e)
+	{
+		let p = players[e.PlayerNumber].mo;
+		if (p) DoRemovePlayerShadow(p);
+	}
+
+	override void WorldUnloaded(WorldEvent e)
+	{
+		// player is leaving this level, so mark their shadows for destruction
+		for (int i = 0; i < MAXPLAYERS; i++)
+		{
+			let p = players[i].mo;
+
+			if (p && playeringame[i])
+			{
+				// find the shadow and destroy it
+				let shadeMe = Z_ShadeMe(p.FindInventory("Z_ShadeMe"));
+
+				if (shadeMe && shadeMe.myShadow)
+				{
+					shadeMe.myShadow.Destroy();
+				}
+
+				DoRemovePlayerShadow(p);
+			}
+		}
+	}
+
+	//===========================================================================
+	//
+	//
+	//
+	//
+	//===========================================================================
+
+	override void WorldTick(void)
+	{
+		PlayerInfo p = players[consoleplayer];
+		if (!p) return;
+		
+		if (!cvMonsterShadow.GetBool()) return;
+		
+		if (!GetShadowDistance()) return;
+		
+		// cutting down the check timer to save resource for performance
+		// only execute the rest of the codes once every specific tics
+		double refreshTime = cvRefreshTime.GetFloat();
+		if(refreshTime && level.maptime % int(refreshTime * 35) != 0) return;
+
+		double shadowDist = GetShadowDistance();
+
+		// update shadow distance
+		shadowDistNew = shadowDist;
+		if (shadowDistOld != shadowDistNew)
+		{
+			ThinkerIterator it = ThinkerIterator.Create("Z_SpriteShadow", Thinker.STAT_DEFAULT);
+			Z_SpriteShadow shadow;
+			while (shadow = Z_SpriteShadow(it.Next()))
+			{
+				shadow.UpdateShadowDistance();
+			}
+			shadowDistOld = shadowDistNew;
+		}
+
+		// look for shadow casters around you
+		double checkDist;
+		int shadowCount;
+		int maxCount = cvMaxShadows.GetInt();
+		
+		// 1st iteration - search for 1/3 of max radius (closer to player)
+		if(shadowDist > 100)
+		{
+			if(shadowDist/3 < 100)
+				checkDist = 100;
+			else
+				checkDist = shadowDist/3;
+		}
+		else
+			checkDist = shadowDist;
+		
+		shadowCount = manageShadowCasters(checkDist, refreshTime, 0, maxCount);
+		
+		// if possible then 2nd iteration - search for 2/3 of max radius
+		if(checkDist == shadowDist)
+			return;
+		else
+		{
+			if(shadowDist - checkDist < 100)
+				checkDist = shadowDist;
+			else
+				checkDist = (shadowDist - checkDist) / 2 + checkDist;
+		}
+		
+		if(shadowCount < maxCount)
+		{
+			maxCount = maxCount - shadowCount;
+			shadowCount = manageShadowCasters(checkDist, refreshTime, shadowCount, maxCount);
+		}
+		else
+			return;
+		
+		// if possible then 3rd iteration - for max radius
+		if(checkDist == shadowDist)
+			return;
+		else
+			checkDist = shadowDist;
+		
+		if(shadowCount < maxCount)
+		{
+			maxCount = maxCount - shadowCount;
+			shadowCount = manageShadowCasters(checkDist, refreshTime, shadowCount, maxCount);
+		}
+		
+		let bShadowList = BlobShadowList(p.mo.FindInventory("BlobShadowList"));
+		bShadowList.cleanupBlobShadows();
+	}
+
+	//===========================================================================
+	//
+	//
+	//
+	//
+	//===========================================================================
+	
+	int manageShadowCasters(double maxDist, double lifeTime, int count, int maxCount)
+	{
+		PlayerInfo p = players[consoleplayer];
+		if (!p) return 0;
+		
+		ThinkerIterator it = ThinkerIterator.Create("Actor", Thinker.STAT_DEFAULT);
+		Actor mo;
+		while (mo = Actor(it.Next()))
+		{
+			if (mo.bIsMonster)
+			{
+				let shadeMarker = Z_ShadeMarker(mo.FindInventory("Z_ShadeMarker"));
+				if(mo.Distance2DSquared(p.mo) <= maxDist ** 2 && inPlayerLOS(mo) && !shadeMarker)
+				{
+					mo.A_GiveInventory("Z_ShadeMarker", 1);
+					count++;
+					if(count >= maxCount) return count;
+					
+					if (mo.CheckSight(p.mo) && mo.health > 0 && mo.bSolid)
+					{
+						mo.SetInventory("Z_ShadeMe", 1);
+						let shadeMe = Z_ShadeMe(mo.FindInventory("Z_ShadeMe"));
+						shadeMe.lifeTime = int(lifeTime * 35);
+						shadeMe.lightID = "mShadow"..count;
+						shadeMe.count = count;
+						shadeMe.ticked = 0; // if already exists reset tic count so it doesn't self destruct
+						continue;
+					}
+				}
+			}
+		}
+		
+		return count;
+	}
+
+	double GetShadowDistance(void)
+	{
+		if (!cvShadowDistance) return 0;
+		return cvShadowDistance.GetFloat();
+	}
+	
+	bool inPlayerLOS(actor mo)
+	{
+		PlayerInfo p = players[consoleplayer];
+		if (!p) return false;
+		
+		if(!mo.CheckSight(p.mo)) return false;
+		
+		// we will spawn a dummy actor right in front of player
+		// if distance from dummy to target longer than player to target then the target is behind player
+		let los_dummy = Actor.Spawn("BulletPuff", p.mo.Vec3Angle(10, p.mo.angle, p.mo.viewheight));
+		bool in_LOS = mo.Distance2D(p.mo) > mo.Distance2D(los_dummy);
+		los_dummy.destroy();
+		return in_LOS;
+	}
+}

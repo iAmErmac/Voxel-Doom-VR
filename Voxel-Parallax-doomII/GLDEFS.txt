@@ -1,0 +1,1995 @@
+//===========================================================================
+//
+// WALLS AND FLATS SHARED BETWEEN DOOM 1 AND DOOM 2
+//
+// Materials that are exclusive to a specific game (either Doom 1 or Doom 2
+// specific) must go in their respective places under the "filter" folder,
+// not in this file. That includes the GLDEFS file, as well as the actual
+// textures inside "materials/heightTex".
+//
+//===========================================================================
+
+//===========================================================================
+//
+// WALLS
+//
+//===========================================================================
+
+material texture "BIGDOOR1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/BIGDOOR1.png"
+}
+
+material texture "BIGDOOR2"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/BIGDOOR2.png"
+}
+
+material texture "BIGDOOR3"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/BIGDOOR3.png"
+}
+
+material texture "BIGDOOR4"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/BIGDOOR4.png"
+}
+
+material texture "BIGDOOR5"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/BIGDOOR5.png"
+}
+
+material texture "BIGDOOR6"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/BIGDOOR6.png"
+}
+
+material texture "BIGDOOR7"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/BIGDOOR7.png"
+}
+
+material texture "BLODRIP1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/BLODRIP1.png"
+}
+
+material texture "BLODRIP2"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/BLODRIP2.png"
+}
+
+material texture "BLODRIP3"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/BLODRIP3.png"
+}
+
+material texture "BLODRIP4"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/BLODRIP4.png"
+}
+
+material texture "BRNPOIS"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/BRNPOIS.png"
+}
+
+material texture "BRNSMAL1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/BRNSMAL1.png"
+}
+
+material texture "BRNSMAL2"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/BRNSMAL2.png"
+}
+
+material texture "BROVINE2"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/BROVINE2.png"
+}
+
+
+material texture "BRNSMALC"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/BRNSMALC.png"
+}
+
+material texture "BRNSMALL"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/BRNSMALL.png"
+}
+
+material texture "BRNSMALR"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/BRNSMALR.png"
+}
+
+material texture "BROWN1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/BROWN1.png"
+}
+
+material texture "BROWN96"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/BROWN96.png"
+}
+
+material texture "BROWN144"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/BROWN144.png"
+}
+
+material texture "BROWNGRN"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/BROWNGRN.png"
+}
+
+material texture "BROWNHUG"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/BROWNHUG.png"
+}
+
+material texture "BROWNPIP"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/BROWNPIP.png"
+}
+
+material texture "CEMENT1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/CEMENT1.png"
+}
+
+material texture "CEMENT2"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/CEMENT2.png"
+}
+
+material texture "CEMENT3"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/CEMENT3.png"
+}
+
+material texture "CEMENT4"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/CEMENT4.png"
+}
+
+material texture "CEMENT5"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/CEMENT5.png"
+}
+
+material texture "CEMENT6"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/CEMENT6.png"
+}
+
+material texture "COMPBLUE"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/COMPBLUE.png"
+}
+
+material texture "COMPWERD"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/COMPWERD.png"
+}
+
+material texture "COMPSPAN"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/COMPSPAN.png"
+}
+
+material texture "COMPSTA1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/COMPSTA1.png"
+}
+
+material texture "COMPSTA2"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/COMPSTA2.png"
+}
+
+material texture "COMPTALL"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/COMPTALL.png"
+}
+
+material texture "DEM1_1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/DEM1_1.png"
+}
+
+material texture "DEM1_2"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/DEM1_2.png"
+}
+
+material texture "DEM1_3"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/DEM1_3.png"
+}
+
+material texture "DEM1_4"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/DEM1_4.png"
+}
+
+material texture "DEM1_5"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/DEM1_5.png"
+}
+
+material texture "DEM1_6"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/DEM1_6.png"
+}
+
+material texture "DOOR1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/DOOR1.png"
+}
+
+material texture "DOOR3"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/DOOR3.png"
+}
+
+material texture "DOORBLU"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/DOORBLU.png"
+}
+
+material texture "DOORRED"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/DOORRED.png"
+}
+
+material texture "DOORSTOP"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/DOORSTOP.png"
+}
+
+material texture "DOORTRAK"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/DOORTRAK.png"
+}
+
+material texture "DOORYEL"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/DOORYEL.png"
+}
+
+material texture "EXITDOOR"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/EXITDOOR.png"
+}
+
+material texture "EXITSIGN"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/EXITSIGN.png"
+}
+
+material texture "GRAY4"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/GRAY4.png"
+}
+
+material texture "GRAY5"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/GRAY5.png"
+}
+
+material texture "GRAY7"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/GRAY7.png"
+}
+
+material texture "GRAYTALL"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/GRAYTALL.png"
+}
+
+material texture "GSTONE1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/GSTONE1.png"
+}
+
+material texture "GSTONE2"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/GSTONE2.png"
+}
+
+
+material texture "LITE3"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/LITE3.png"
+}
+
+
+material texture "LITE5"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/LITE5.png"
+}
+
+material texture "LITEBLU1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/LITEBLU1.png"
+}
+
+material texture "LITEBLU4"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/LITEBLU4.png"
+}
+
+material texture "MARBFACE"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/MARBFACE.png"
+}
+
+material texture "MARBFAC2"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/MARBFAC2.png"
+}
+
+material texture "MARBFAC3"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/MARBFAC3.png"
+}
+
+material texture "METAL1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/METAL1.png"
+}
+
+material texture "MFLR8_1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/MFLR8_1.png"
+}
+
+material texture "NUKE24"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/NUKE24.png"
+}
+
+material texture "NUKEDGE1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/NUKEDGE1.png"
+}
+
+material texture "PIPE2"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/PIPE2.png"
+}
+
+material texture "PLAT1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/PLAT1.png"
+}
+
+material texture "ROCKRED1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/ROCKRED1.png"
+}
+
+material texture "ROCKRED2"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/ROCKRED2.png"
+}
+
+material texture "ROCKRED3"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/ROCKRED3.png"
+}
+
+material texture "SHAWN2"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SHAWN2.png"
+}
+
+material texture "SKSPINE1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SKSPINE1.png"
+}
+
+material texture "SKINFACE"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SKINFACE.png"
+}
+
+material texture "SLADPOIS"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SLADPOIS.png"
+}
+
+material texture "SLADWALL"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SLADWALL.png"
+}
+
+material texture "SP_DUDE1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SP_DUDE1.png"
+}
+
+material texture "SP_FACE1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SP_FACE1.png"
+}
+
+material texture "SP_ROCK1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SP_ROCK1.png"
+}
+
+material texture "STARG1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/STARG1.png"
+}
+
+material texture "STARG3"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/STARG3.png"
+}
+
+material texture "STARGR1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/STARGR1.png"
+}
+
+material texture "STARTAN2"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/STARTAN2.png"
+}
+
+material texture "STARTAN3"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/STARTAN3.png"
+}
+
+material texture "STEP1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/STEP1.png"
+}
+
+material texture "STEP2"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/STEP2.png"
+}
+
+material texture "STEP3"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/STEP3.png"
+}
+
+material texture "STEP4"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/STEP4.png"
+}
+
+material texture "STEP5"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/STEP5.png"
+}
+
+material texture "STEP6"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/STEP6.png"
+}
+
+material texture "STONE"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/STONE.png"
+}
+
+material texture "STONE2"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/STONE2.png"
+}
+
+material texture "STONE3"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/STONE3.png"
+}
+
+material texture "SUPPORT2"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SUPPORT2.png"
+}
+
+material texture "SW1BRCOM"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SW1BRCOM.png"
+}
+
+material texture "SW1BRN1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SW1BRN1.png"
+}
+
+material texture "SW1BRN2"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SW1BRN2.png"
+}
+
+material texture "SW1BRNGN"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SW1BRNGN.png"
+}
+
+material texture "SW1BROWN"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SW1BROWN.png"
+}
+
+material texture "SW1COMM"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SW1COMM.png"
+}
+
+material texture "SW1COMP"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SW1COMP.png"
+}
+
+material texture "SW1DIRT"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SW1DIRT.png"
+}
+
+material texture "SW1EXIT"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SW1EXIT.png"
+}
+
+material texture "SW1GRAY"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SW1GRAY.png"
+}
+
+material texture "SW1GRAY1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SW1GRAY1.png"
+}
+
+material texture "SW1METAL"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SW1METAL.png"
+}
+
+material texture "SW1PIPE"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SW1PIPE.png"
+}
+
+material texture "SW1SATYR"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SW1SATYR.png"
+}
+
+material texture "SW1SKIN"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SW1SKIN.png"
+}
+
+material texture "SW1SLAD"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SW1SLAD.png"
+}
+
+material texture "SW1STARG"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SW1STARG.png"
+}
+
+material texture "SW1STON1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SW1STON1.png"
+}
+
+material texture "SW1STON2"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SW1STON2.png"
+}
+
+material texture "SW1STONE"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SW1STONE.png"
+}
+
+material texture "SW1STRTN"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SW1STRTN.png"
+}
+
+material texture "SW2BRCOM"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SW2BRCOM.png"
+}
+
+material texture "SW2BRN1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SW2BRN1.png"
+}
+
+material texture "SW2BRN2"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SW2BRN2.png"
+}
+
+material texture "SW2BRNGN"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SW2BRNGN.png"
+}
+
+material texture "SW2BROWN"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SW2BROWN.png"
+}
+
+material texture "SW2COMM"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SW2COMM.png"
+}
+
+material texture "SW2COMP"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SW2COMP.png"
+}
+
+material texture "SW2DIRT"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SW2DIRT.png"
+}
+
+material texture "SW2EXIT"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SW2EXIT.png"
+}
+
+material texture "SW2GRAY"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SW2GRAY.png"
+}
+
+material texture "SW2GRAY1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SW2GRAY1.png"
+}
+
+material texture "SW2METAL"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SW2METAL.png"
+}
+
+material texture "SW2PIPE"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SW2PIPE.png"
+}
+
+material texture "SW2SATYR"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SW2SATYR.png"
+}
+
+material texture "SW2SKIN"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SW2SKIN.png"
+}
+
+material texture "SW2SLAD"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SW2SLAD.png"
+}
+
+material texture "SW2STARG"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SW2STARG.png"
+}
+
+material texture "SW2STON1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SW2STON1.png"
+}
+
+material texture "SW2STON2"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SW2STON2.png"
+}
+
+material texture "SW2STONE"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SW2STONE.png"
+}
+
+material texture "SW2STRTN"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SW2STRTN.png"
+}
+
+material texture "TEKWALL1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/TEKWALL1.png"
+}
+
+material texture "TEKWALL4"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/TEKWALL4.png"
+}
+
+material texture "WOOD4"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/WOOD4.png"
+}
+
+material texture "WOODGARG"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/WOODGARG.png"
+}
+
+material texture "CRATE1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/CRATE1.png"
+}
+
+material texture "CRATE2"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/CRATE2.png"
+}
+material texture "CRATELIT"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/CRATELIT.png"
+}
+material texture "CRATINY"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/CRATINY.png"
+}
+material texture "CRATWIDE"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/CRATWIDE.png"
+}
+material texture "DOORBLU2"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/DOORBLU2.png"
+}
+material texture "DOORRED2"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/DOORRED2.png"
+}
+material texture "DOORYEL2"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/DOORYEL2.png"
+}
+material texture "EXITSTON"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/EXITSTON.png"
+}
+material texture "FIREBLU1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/FIREBLU1.png"
+}
+material texture "FIREBLU2"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/FIREBLU2.png"
+}
+material texture "FIRELAV2"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/FIRELAV2.png"
+}
+material texture "FIRELAV3"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/FIRELAV3.png"
+}
+material texture "FIRELAVA"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/FIRELAVA.png"
+}
+material texture "FIREMAG1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/FIREMAG1.png"
+}
+material texture "FIREMAG2"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/FIREMAG2.png"
+}
+material texture "FIREMAG3"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/FIREMAG3.png"
+}
+material texture "FIREWALA"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/FIREWALA.png"
+}
+material texture "FIREWALB"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/FIREWALB.png"
+}
+material texture "FIREWALL"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/FIREWALL.png"
+}
+material texture "GRAY1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/GRAY1.png"
+}
+material texture "GRAY2"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/GRAY2.png"
+}
+material texture "GRAYBIG"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/GRAYBIG.png"
+}
+
+material texture "GRAYPOIS"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/GRAYPOIS.png"
+}
+material texture "GRAYVINE"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/GRAYVINE.png"
+}
+material texture "GSTFONT1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/GSTFONT1.png"
+}
+material texture "GSTFONT2"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/GSTFONT2.png"
+}
+material texture "GSTFONT3"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/GSTFONT3.png"
+}
+material texture "GSTGARG"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/GSTGARG.png"
+}
+material texture "GSTLION"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/GSTLION.png"
+}
+material texture "GSTSATYR"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/GSTSATYR.png"
+}
+material texture "GSTVINE1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/GSTVINE1.png"
+}
+material texture "GSTVINE2"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/GSTVINE2.png"
+}
+
+material texture "ICKWALL1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/ICKWALL1.png"
+}
+material texture "ICKWALL2"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/ICKWALL2.png"
+}
+material texture "ICKWALL3"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/ICKWALL3.png"
+}
+material texture "ICKWALL4"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/ICKWALL4.png"
+}
+material texture "ICKWALL5"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/ICKWALL5.png"
+}
+
+material texture "ICKWALL7"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/ICKWALL7.png"
+}
+
+
+
+material texture "MARBLE1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/MARBLE1.png"
+}
+material texture "MARBLE2"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/MARBLE2.png"
+}
+material texture "MARBLE3"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/MARBLE3.png"
+}
+material texture "MARBLOD1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/MARBLOD1.png"
+}
+material texture "METAL"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/METAL.png"
+}
+material texture "MIDBRN1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/MIDBRN1.png"
+}
+material texture "MIDGRATE"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/MIDGRATE.png"
+}
+
+material texture "NUKE24"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/NUKE24.png"
+}
+material texture "NUKEDGE1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/NUKEDGE1.png"
+}
+material texture "NUKEPOIS"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/NUKEPOIS.png"
+}
+
+material texture "PIPE1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/PIPE1.png"
+}
+material texture "PIPE4"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/PIPE4.png"
+}
+material texture "PIPE6"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/PIPE6.png"
+}
+material texture "REDWALL"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/REDWALL.png"
+}
+material texture "SHAWN1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SHAWN1.png"
+}
+material texture "SHAWN3"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SHAWN3.png"
+}
+material texture "SKIN2"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SKIN2.png"
+}
+
+material texture "SKINCUT"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SKINCUT.png"
+}
+
+material texture "SKINEDGE"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SKINEDGE.png"
+}
+
+material texture "SKINLOW"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SKINLOW.png"
+}
+
+material texture "SKINMET1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SKINMET1.png"
+}
+
+material texture "SKINMET2"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SKINMET2.png"
+}
+
+material texture "SKINSCAB"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SKINSCAB.png"
+}
+
+material texture "SKINSYMB"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SKINSYMB.png"
+}
+
+material texture "SKSNAKE1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SKSNAKE1.png"
+}
+
+material texture "SKSNAKE2"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SKSNAKE2.png"
+}
+
+material texture "SKSPINE2"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SKSPINE2.png"
+}
+
+material texture "SLADSKUL"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SLADSKUL.png"
+}
+
+material texture "SP_DUDE2"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SP_DUDE2.png"
+}
+
+
+
+
+material texture "SP_DUDE4"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SP_DUDE4.png"
+}
+
+material texture "SP_DUDE5"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SP_DUDE5.png"
+}
+
+material texture "SP_FACE1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SP_FACE1.png"
+}
+
+material texture "SP_HOT1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SP_HOT1.png"
+}
+
+material texture "STARBR2"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/STARBR2.png"
+}
+
+material texture "STARG2"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/STARG2.png"
+}
+
+material texture "STARGR2"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/STARGR2.png"
+}
+
+material texture "STEPLAD1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/STEPLAD1.png"
+}
+
+material texture "STEPTOP"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/STEPTOP.png"
+}
+
+material texture "SUPPORT3"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SUPPORT3.png"
+}
+
+material texture "SW1BLUE"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SW1BLUE.png"
+}
+
+material texture "SW1CMT"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SW1CMT.png"
+}
+
+material texture "SW1GARG"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SW1GARG.png"
+}
+
+material texture "SW1GSTON"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SW1GSTON.png"
+}
+
+material texture "SW1HOT"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SW1HOT.png"
+}
+
+material texture "SW1LION"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SW1LION.png"
+}
+
+material texture "SW1VINE"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SW1VINE.png"
+}
+
+material texture "SW1WOOD"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SW1WOOD.png"
+}
+
+material texture "SW2BLUE"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SW2BLUE.png"
+}
+
+material texture "SW2CMT"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SW2CMT.png"
+}
+
+material texture "SW2GARG"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SW2GARG.png"
+}
+
+material texture "SW2GSTON"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SW2GSTON.png"
+}
+
+material texture "SW2HOT"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SW2HOT.png"
+}
+
+material texture "SW2LION"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SW2LION.png"
+}
+
+material texture "SW2VINE"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SW2VINE.png"
+}
+
+material texture "SW2WOOD"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/SW2WOOD.png"
+}
+
+material texture "WOOD1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/WOOD1.png"
+}
+
+material texture "WOOD3"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/WOOD3.png"
+}
+
+material texture "WOOD5"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/walls/WOOD5.png"
+}
+
+//===========================================================================
+//
+// FLATS
+//
+//===========================================================================
+
+
+material texture "BLOOD1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/BLOOD1.png"
+}
+
+
+material texture "BLOOD2"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/BLOOD2.png"
+}
+
+material texture "BLOOD3"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/BLOOD3.png"
+}
+
+material texture "CEIL1_1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/CEIL1_1.png"
+}
+
+material texture "CEIL1_2"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/CEIL1_2.png"
+}
+
+material texture "CEIL1_3"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/CEIL1_3.png"
+}
+
+material texture "CEIL3_1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/CEIL3_1.png"
+}
+
+material texture "CEIL3_2"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/CEIL3_2.png"
+}
+
+material texture "CEIL3_3"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/CEIL3_3.png"
+}
+
+material texture "CEIL3_4"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/CEIL3_4.png"
+}
+
+material texture "CEIL3_5"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/CEIL3_5.png"
+}
+
+material texture "CEIL3_6"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/CEIL3_6.png"
+}
+
+material texture "CEIL4_1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/CEIL4_1.png"
+}
+
+material texture "CEIL4_2"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/CEIL4_2.png"
+}
+
+material texture "CEIL4_3"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/CEIL4_3.png"
+}
+
+material texture "CEIL5_1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/CEIL5_1.png"
+}
+
+material texture "CEIL5_2"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/CEIL5_2.png"
+}
+
+material texture "COMP01"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/COMP01.png"
+}
+
+material texture "CONS1_1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/CONS1_1.png"
+}
+
+material texture "CONS1_5"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/CONS1_5.png"
+}
+
+material texture "CONS1_7"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/CONS1_7.png"
+}
+
+material texture "CRATOP1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/CRATOP1.png"
+}
+
+material texture "CRATOP2"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/CRATOP2.png"
+}
+
+material texture "FLAT1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/FLAT1.png"
+}
+
+material texture "FLAT1_1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/FLAT1_1.png"
+}
+
+material texture "FLAT1_2"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/FLAT1_2.png"
+}
+
+material texture "FLAT1_3"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/FLAT1_3.png"
+}
+
+material texture "FLAT3"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/FLAT3.png"
+}
+
+material texture "FLAT4"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/FLAT4.png"
+}
+
+material texture "FLAT5"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/FLAT5.png"
+}
+
+material texture "FLAT5_1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/FLAT5_1.png"
+}
+
+material texture "FLAT5_2"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/FLAT5_2.png"
+}
+
+material texture "FLAT5_3"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/FLAT5_3.png"
+}
+
+material texture "FLAT5_4"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/FLAT5_4.png"
+}
+
+material texture "FLAT5_5"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/FLAT5_5.png"
+}
+
+material texture "FLAT5_6"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/FLAT5_6.png"
+}
+
+material texture "FLAT5_7"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/FLAT5_7.png"
+}
+
+material texture "FLAT5_8"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/FLAT5_8.png"
+}
+
+material texture "FLAT8"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/FLAT8.png"
+}
+
+material texture "FLAT10"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/FLAT10.png"
+}
+
+material texture "FLAT14"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/FLAT14.png"
+}
+
+material texture "FLAT18"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/FLAT18.png"
+}
+
+material texture "FLAT19"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/FLAT19.png"
+}
+
+material texture "FLAT20"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/FLAT20.png"
+}
+
+material texture "FLAT22"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/FLAT22.png"
+}
+
+material texture "FLAT23"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/FLAT23.png"
+}
+
+material texture "FLOOR0_1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/FLOOR0_1.png"
+}
+
+material texture "FLOOR0_2"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/FLOOR0_2.png"
+}
+
+material texture "FLOOR0_3"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/FLOOR0_3.png"
+}
+
+material texture "FLOOR0_5"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/FLOOR0_5.png"
+}
+
+material texture "FLOOR0_6"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/FLOOR0_6.png"
+}
+
+material texture "FLOOR0_7"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/FLOOR0_7.png"
+}
+
+material texture "FLOOR1_1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/FLOOR1_1.png"
+}
+
+material texture "FLOOR1_6"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/FLOOR1_6.png"
+}
+
+material texture "FLOOR3_3"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/FLOOR3_3.png"
+}
+
+material texture "FLOOR4_1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/FLOOR4_1.png"
+}
+
+material texture "FLOOR4_5"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/FLOOR4_5.png"
+}
+
+material texture "FLOOR4_6"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/FLOOR4_6.png"
+}
+
+material texture "FLOOR4_8"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/FLOOR4_8.png"
+}
+
+material texture "FLOOR5_1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/FLOOR5_1.png"
+}
+
+material texture "FLOOR5_2"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/FLOOR5_2.png"
+}
+
+material texture "FLOOR5_3"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/FLOOR5_3.png"
+}
+
+material texture "FLOOR5_4"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/FLOOR5_4.png"
+}
+
+material texture "FLOOR6_1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/FLOOR6_1.png"
+}
+
+material texture "FLOOR6_2"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/FLOOR6_2.png"
+}
+
+material texture "FLOOR7_1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/FLOOR7_1.png"
+}
+
+material texture "FLOOR7_2"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/FLOOR7_2.png"
+}
+
+material texture "FWATER1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/FWATER1.png"
+}
+
+material texture "FWATER2"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/FWATER2.png"
+}
+
+material texture "FWATER3"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/FWATER3.png"
+}
+
+material texture "FWATER4"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/FWATER4.png"
+}
+
+material texture "GATE1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/GATE1.png"
+}
+
+material texture "GATE2"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/GATE2.png"
+}
+
+material texture "GATE3"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/GATE3.png"
+}
+
+material texture "GATE4"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/GATE4.png"
+}
+
+material texture "LAVA1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/LAVA1.png"
+}
+
+material texture "LAVA2"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/LAVA2.png"
+}
+
+material texture "LAVA3"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/LAVA3.png"
+}
+
+material texture "LAVA4"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/LAVA4.png"
+}
+
+material texture "MFLR8_2"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/MFLR8_2.png"
+}
+
+material texture "MFLR8_3"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/MFLR8_3.png"
+}
+
+material texture "MFLR8_4"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/MFLR8_4.png"
+}
+
+material texture "NUKAGE1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/NUKAGE1.png"
+}
+
+material texture "NUKAGE2"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/NUKAGE2.png"
+}
+
+material texture "NUKAGE3"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/NUKAGE3.png"
+}
+
+material texture "sflr6_1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/sflr6_1.png"
+}
+
+material texture "sflr6_4"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/sflr6_4.png"
+}
+
+material texture "sflr7_1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/sflr7_1.png"
+}
+
+material texture "sflr7_4"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/sflr7_4.png"
+}
+
+material texture "STEP1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/STEP1.png"
+}
+
+material texture "STEP2"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/STEP2.png"
+}
+
+
+material texture "SUPPORT2"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/SUPPORT2.png"
+}
+
+material texture "TLITE6_1"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/TLITE6_1.png"
+}
+
+material texture "TLITE6_4"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/TLITE6_4.png"
+}
+
+material texture "TLITE6_5"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/TLITE6_5.png"
+}
+
+material texture "TLITE6_6"
+{
+	shader "shaders/CheelloVoxelShader.fp"
+	texture heightTex "materials/heightTex/flats/TLITE6_6.png"
+}

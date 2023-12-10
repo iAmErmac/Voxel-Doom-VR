@@ -1,0 +1,265 @@
+//===========================================================================
+//
+// CHEELLO VOXEL DOOM
+//
+// ZScript code: Copyright (C) 2022 - 2023 Nash Muhandes
+//
+// License: MIT
+//
+//===========================================================================
+
+//===========================================================================
+//
+// Zombie Man
+//
+//===========================================================================
+
+class CheelloZombieMan : ZombieMan replaces ZombieMan
+{
+	mixin CheelloMonsterMixin;
+
+	States
+	{
+	See:
+		POSS AABBCCDD 4 A_CheelloChase();
+		Loop;
+	Missile:
+		POSS E 10 A_CheelloFaceTarget(); TNT1 A 0 A_CheelloStopFacingTarget();
+		POSS F 8 Bright A_PosAttack();
+		POSS E 8;
+		Goto See;
+	}
+}
+
+//===========================================================================
+//
+// Shotgun Guy
+//
+//===========================================================================
+
+class CheelloShotgunGuy : ShotgunGuy replaces ShotgunGuy
+{
+	mixin CheelloMonsterMixin;
+
+	States
+	{
+	See:
+		SPOS AABBCCDD 3 A_CheelloChase();
+		Loop;
+	Missile:
+		SPOS E 10 A_CheelloFaceTarget(); TNT1 A 0 A_CheelloStopFacingTarget();
+		SPOS F 10 Bright A_SposAttackUseAtkSound();
+		SPOS E 10;
+		Goto See;
+	}
+}
+
+//===========================================================================
+//
+// Imp
+//
+//===========================================================================
+
+class CheelloDoomImp : DoomImp replaces DoomImp
+{
+	mixin CheelloMonsterMixin;
+
+	States
+	{
+	See:
+		TROO AABBCCDD 3 A_CheelloChase();
+		Loop;
+	Melee:
+	Missile:
+		TROO EF 8 A_CheelloFaceTarget(); TNT1 A 0 A_CheelloStopFacingTarget();
+		TROO G 6 A_TroopAttack();
+		Goto See;
+	}
+}
+
+//===========================================================================
+//
+// Demon
+//
+//===========================================================================
+
+class CheelloDemon : Demon replaces Demon
+{
+	mixin CheelloMonsterMixin;
+
+	States
+	{
+	See:
+		SARG AABBCCDD 2 Fast A_CheelloChase();
+		Loop;
+	Melee:
+		SARG EF 8 Fast A_CheelloFaceTarget(); TNT1 A 0 A_CheelloStopFacingTarget();
+		SARG G 8 Fast A_SargAttack();
+		Goto See;
+	}
+}
+
+//===========================================================================
+//
+// Spectre
+//
+//===========================================================================
+
+class CheelloSpectre : Spectre replaces Spectre
+{
+	mixin CheelloMonsterMixin;
+
+	Default
+	{
+		// This is the only RenderStyle that is the least glitchiest with voxels.
+		RenderStyle "Shadow";
+	}
+
+	States
+	{
+	See:
+		SARG AABBCCDD 2 Fast A_CheelloChase();
+		Loop;
+	Melee:
+		SARG EF 8 Fast A_CheelloFaceTarget(); TNT1 A 0 A_CheelloStopFacingTarget();
+		SARG G 8 Fast A_SargAttack();
+		Goto See;
+	}
+}
+
+//===========================================================================
+//
+// Lost Soul
+//
+//===========================================================================
+
+class CheelloLostSoul : LostSoul replaces LostSoul
+{
+	mixin CheelloMonsterMixin;
+
+	States
+	{
+	See:
+		SKUL AB 6 Bright A_CheelloChase();
+		Loop;
+	Missile:
+		SKUL C 10 Bright A_CheelloFaceTarget(); TNT1 A 0 A_CheelloStopFacingTarget();
+		SKUL D 4 Bright A_SkullAttack();
+		SKUL CD 4 Bright;
+		Goto Missile + 3;
+	}
+}
+
+//===========================================================================
+//
+// Cacodemon
+//
+//===========================================================================
+
+class CheelloCacodemon : Cacodemon replaces Cacodemon
+{
+	mixin CheelloMonsterMixin;
+
+	Default
+	{
+		BloodColor "00 00 F9";
+	}
+
+	States
+	{
+	See:
+		HEAD A 3 A_CheelloChase();
+		Loop;
+	Missile:
+		HEAD B 5 A_CheelloFaceTarget(); TNT1 A 0 A_CheelloStopFacingTarget();
+		HEAD C 5 A_CheelloFaceTarget(); TNT1 A 0 A_CheelloStopFacingTarget();
+		HEAD D 5 BRIGHT A_HeadAttack();
+		Goto See;
+	}
+}
+
+//===========================================================================
+//
+// Baron of Hell
+//
+//===========================================================================
+
+class CheelloBaronOfHell : BaronOfHell replaces BaronOfHell
+{
+	mixin CheelloMonsterMixin;
+
+	Default
+	{
+		BloodColor "30 67 23";
+	}
+
+	States
+	{
+	See:
+		BOSS AABBCCDD 3 A_CheelloChase();
+		Loop;
+	Melee:
+	Missile:
+		BOSS EF 8 A_CheelloFaceTarget(); TNT1 A 0 A_CheelloStopFacingTarget();
+		BOSS G 8 A_BruisAttack();
+		Goto See;
+	}
+}
+
+//===========================================================================
+//
+// Spider Mastermind
+//
+//===========================================================================
+
+class CheelloSpiderMastermind : SpiderMastermind replaces SpiderMastermind
+{
+	mixin CheelloMonsterMixin;
+
+	States
+	{
+	See:
+		SPID A 3 A_Metal();
+		SPID ABB 3 A_CheelloChase();
+		SPID C 3 A_Metal();
+		SPID CDD 3 A_CheelloChase();
+		SPID E 3 A_Metal();
+		SPID EFF 3 A_CheelloChase();
+		Loop;
+	Missile:
+		SPID A 20 A_CheelloFaceTarget(); TNT1 A 0 A_CheelloStopFacingTarget();
+		SPID G 4 Bright A_SPosAttackUseAtkSound();
+		SPID H 4 Bright A_SposAttackUseAtkSound();
+		SPID H 1 Bright A_SpidRefire();
+		Goto Missile + 2;
+	}
+}
+
+//===========================================================================
+//
+// Cyberdemon
+//
+//===========================================================================
+
+class CheelloCyberdemon : Cyberdemon replaces Cyberdemon
+{
+	mixin CheelloMonsterMixin;
+
+	States
+	{
+	See:
+		CYBR A 3 A_Hoof();
+		CYBR ABBCC 3 A_CheelloChase();
+		CYBR D 3 A_Metal();
+		CYBR D 3 A_CheelloChase();
+		Loop;
+	Missile:
+		CYBR E 6 A_CheelloFaceTarget(); TNT1 A 0 A_CheelloStopFacingTarget();
+		CYBR F 12 Bright A_CyberAttack();
+		CYBR E 12 A_CheelloFaceTarget(); TNT1 A 0 A_CheelloStopFacingTarget();
+		CYBR F 12 Bright A_CyberAttack();
+		CYBR E 12 A_CheelloFaceTarget(); TNT1 A 0 A_CheelloStopFacingTarget();
+		CYBR F 12 Bright A_CyberAttack();
+		Goto See;
+	}
+}

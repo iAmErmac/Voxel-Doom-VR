@@ -1,0 +1,12 @@
+user bool cl_monstershadow = true;
+user int cl_monstershadowdistance = 800;
+user int cl_maxmonstershadows = 20;
+user float cl_voxelshadowrefresh = 0.3;
+user bool cl_voxelshadowdelete = true;
+user int cl_voxelshadowdeletedelay = 3;
+user int cl_monstershadowtype = 0;
+user int cl_blobshadowfaded = 1;
+user bool cl_itemshadow = false;
+user int cl_itemshadowminrad = 5;
+user int cl_itemshadowdistance = 800;
+user int cl_maxitemshadows = 10;

@@ -1,0 +1,43 @@
+//===========================================================================
+//
+// CHEELLO VOXEL DOOM
+//
+// ZScript code: Copyright (C) 2022 - 2023 Nash Muhandes
+//
+// License: MIT
+//
+//===========================================================================
+
+//===========================================================================
+//
+// CheelloRocket
+//
+//===========================================================================
+
+class CheelloRocket : Rocket replaces Rocket
+{
+	Default
+	{
+		// GZDoom's voxel drawer is glitchy when translucency is applied
+		// (various depth sorting errors)
+		// Therefore force non-translucency
+		RenderStyle "Normal";
+		Alpha 1;
+		-DEHEXPLOSION
+		-ZDOOMTRANS
+	}
+
+	override void PostBeginPlay(void)
+	{
+		// This is needed to make the rocket face the correct angle immediately upon spawning
+		A_FaceMovementDirection();
+		Super.PostBeginPlay();
+	}
+
+	States
+	{
+	Spawn:
+		MISL A 1 NoDelay Bright A_FaceMovementDirection();
+		Loop;
+	}
+}
