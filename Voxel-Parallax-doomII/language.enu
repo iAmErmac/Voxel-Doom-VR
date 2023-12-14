@@ -7,8 +7,9 @@ OPTMNU_VOXELDOOMWEAPONSOPTS = "Voxel weapons models options";
 
 VOXELDOOMMNU_VOXELONOFF = "Voxels Rendering Active";
 VOXELDOOMMNU_SPINITEMS = "Spinning items";
+VOXELDOOMMNU_SPINITEMS_TOOLTIP = "Set item spinning animation";
 VOXELDOOMMNU_SPINEYE = "Look-at-player Evil Eye for SIGIL (must restart game)";
-VOXELDOOMMNU_SMOOTHDEMONS = "Smooth Rotating Demons";
+VOXELDOOMMNU_SMOOTHROT = "Smooth Rotating Demons";
 
 OPTVAL_VOXELDOOM_SPINALL = "All items";
 
@@ -33,11 +34,12 @@ OPTVAL_WEAPONRENDINT = "Rendering Interpolation";
 
 
 
-VOXELDOOMMNU_SMOOTHDEMONSON = "Activate Smooth Rotating Demons";
-VOXELDOOMMNU_SMOOTHDEMONSBITE = "Demon attack face target";
+VOXELDOOMMNU_SMOOTHROT_TOOLTIP = "Activate Smooth Rotating Demons";
+VOXELDOOMMNU_MPTT = "Demon attack face target";
+VOXELDOOMMNU_MPTT_TOOLTIP = "Demon face to target when attacking";
 
-OPTMNU_VOXELDOOMICONMNU = "Voxel Doom Icon of Sin";
-VOXELDOOMMNU_ICONONOFF = "Activate Voxel Icon of Sin";
+VOXELDOOMMNU_ICONVOX = "Voxel Doom Icon of Sin";
+VOXELDOOMMNU_ICONVOX_TOOLTIP = "Activate Voxel Icon of Sin";
 VOXELDOOMMNU_ICONALIGN = "Align Icon of Sin";
 VOXELDOOMMNU_ICONOFFSET = "Fine Alignment";
 

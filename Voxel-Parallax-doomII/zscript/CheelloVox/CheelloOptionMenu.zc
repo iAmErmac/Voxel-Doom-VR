@@ -138,7 +138,7 @@ class CheelloOptionMenu : OptionMenu
 			}
 		}
 
-		fHeight = optFnt.GetHeight() * CleanYFac_1;
+		fHeight = optFnt.GetHeight() * CleanYFac_1 + 16;
 		padding = fHeight << 1;
 
 		if (prevSelected != mDesc.mSelectedItem)
