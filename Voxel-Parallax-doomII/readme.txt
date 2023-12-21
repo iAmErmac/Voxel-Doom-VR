@@ -1,8 +1,25 @@
-Title: Voxel Doom II with Parallax Textures
-Version: 2.2
-Requires: GZDoom 4.10 or higher
+Title: Cheello's Voxel Doom
+Version: 2.3
+Release date: December 18th 2023
+Engine: GZDoom 4.5 or higher and LZDoom 3.8
 https://twitter.com/DanielWienerson
 https://www.youtube.com/channel/UC1WkHfzyqhCMTOLCeBznygA
+
+//===========================================================================
+//
+// REQUIREMENTS AND TECHNICAL NOTES
+//
+//===========================================================================
+
+- GZDoom requires up to 2.2 GB of video memory (VRAM) to fully load Voxel
+  Doom. A graphics card with 4 GB of VRAM is recommended.
+- The software render is not supported. GZDoom will most likely just crash.
+- GZDoom, by default, only loads in voxel data when an object comes into
+  view. This may cause stuttering as a monster appears in your view for the
+  first time. You can enable voxel precaching in the Voxel Doom Options menu
+  to force the mod to preload voxels for every existing object in the map.
+  Do note that this comes with a small tradeoff - entering a map will be
+  delayed slightly as a result, in addition to consuming a little more VRAM.
 
 //===========================================================================
 //
@@ -10,28 +27,40 @@ https://www.youtube.com/channel/UC1WkHfzyqhCMTOLCeBznygA
 //
 //===========================================================================
 
-Place the voxel_doomII.pk3 file in your GZDoom folder. Drag the file onto gzdoom.exe and select a WAD file to run.
+Place the VoxelDoom.pk3 file in your GZDoom folder. Drag the file on to
+gzdoom.exe and select a WAD file to run.
+
+It is safe to have the mod autoloaded as the contents will be filtered
+properly depending on whether Doom 1 or Doom 2 is played.
 
 Enjoy!
 
 //===========================================================================
 //
-// CODE CHANGES
+// ABOUT VOXEL DOOM
 //
 //===========================================================================
 
-Some light ZScript support code was necessary to further enhance this mod.
-Here's a list of what's added or changed from a coding perspective:
+Voxel Doom features:
 
-- Monsters will face the player upon death.
+- Full support for Doom 1, Ultimate Doom, Doom 2, TNT, Plutonia and Wadsmoosh!
+- Voxel Doom comes with its own Actor replacements. This was necessary for
+  most of its core features and is unavoidable. Compatibility with other mods
+  is therefore not guaranteed.
+- Killed monsters will face the player that killed them.
+- Smooth rotation for monsters (optional).
+- Flying monsters will adjust their pitch to face their target (optional).
+- Spinning item pickups (optional).
 - Colorized blood for the Cacodemon, Baron of Hell and Hell Knight.
-- Spectre's renderstyle has been forced to shadow as any other renderstyle
-  appears to be very glitchy.
+- Render styles for some Actors have been explicitly changed due to rendering
+  glitches with GZDoom. Actors affected: Spectre, Mancubus fireball, player
+  invisibility powerup.
 - Incorporated GZSprFix's (which, in turn, is based off Revenant100's Sprite
-  Fix Project) actor fixes concerning wrongly-lit attacking frames. Affects
+  Fix Project) Actor fixes concerning wrongly-lit attacking frames. Affects
   the Zombieman, Cyberdemon, Spider Mastermind, Chaingunner and Arachnotron.
-- Blood sprite has billboarding enforced.
-- Some spherical voxels will always face the camera.
+- Powerup spheres will always face the camera.
+- Automatically rotate the eye decorations when the mod is played with SIGIL.
+- Fully voxelized Icon of Sin!
 
 //===========================================================================
 //
@@ -39,22 +68,19 @@ Here's a list of what's added or changed from a coding perspective:
 //
 //===========================================================================
 
-Cheello's Doom Voxel Mod
+Cheello's Voxel Doom
 © 2021 - 2023 Daniel Peterson
 
-All voxel models, parallax textures and some code by Cheello
-BTOrbitCam by Nash Muhandes
-Parallax Mod by dpJudas with alternative version by Steve5563 and DarkCrafter
+All voxel models and base VOXELDEF by Cheello
+ZScript code by Nash Muhandes (MIT licensed)
+LZDoom and QuestZDoom compatibility fix by Ermac
 
 Special thanks:
 
 Nash Muhandes for consultation, beta testing, and coding help
-DeathWrench for finding the updated code for the parallax texture features
-Steve5563
-DarkCrafter
-dpJudas
-Agustin Alvarez
+Agustin Alvarez for various feature ideas, beta testing and additional support
 
 MODDERS:
 
-You may use my voxels in your own projects, as long as you give me, "Cheello" credit.
+You may use my voxels in your own projects, as long as you give me, "Cheello"
+credit.

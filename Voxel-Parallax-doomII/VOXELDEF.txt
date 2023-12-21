@@ -579,4 +579,11 @@ tfogg = "tfogg"
 tfogh = "tfogh"
 tfogi = "tfogi"
 tfogj = "tfogj"
+
+// Item respawn fog
+ifoga = "ifoga"
+ifogb = "ifogb"
+ifogc = "ifogc"
+ifogd = "ifogd"
+ifoge = "ifoge"
 */
