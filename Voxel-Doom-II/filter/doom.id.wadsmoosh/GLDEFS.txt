@@ -1,0 +1,43 @@
+//===========================================================================
+//
+// DYNAMIC LIGHTS
+//
+//===========================================================================
+
+Object CheelloChaingunGuy
+{
+	Frame CPOSE { Light ZOMBIEATK }
+	Frame CPOSF { Light ZOMBIEATK }
+}
+
+Object CheelloFatShot
+{
+	Frame MANFA { Light IMPBALL   }
+	Frame MANFB { Light IMPBALL   }
+	Frame MISLB { Light ROCKET_X1 }
+	Frame MISLC { Light ROCKET_X2 }
+	Frame MISLD { Light ROCKET_X3 }
+}
+
+Object CheelloArchvile
+{
+	Frame VILEH { Light ARCHATK1 }
+	Frame VILEI { Light ARCHATK2 }
+	Frame VILEJ { Light ARCHATK3 }
+	Frame VILEK { Light ARCHATK4 }
+	Frame VILEL { Light ARCHATK4 }
+	Frame VILEM { Light ARCHATK4 }
+	Frame VILEN { Light ARCHATK5 }
+	Frame VILEO { Light ARCHATK6 }
+	Frame VILEP { Light ARCHATK7 }
+
+	Frame VILE[ { Light ARCHRES }
+	Frame VIL2A { Light ARCHRES }
+	Frame VILE] { Light ARCHRES }
+}
+
+Object CheelloMegasphere
+{
+	Frame MEGA { Light MEGASPHERE }
+	Frame VEGA { Light MEGASPHERE }
+}

@@ -1,0 +1,68 @@
+//===========================================================================
+//
+// DYNAMIC LIGHTS
+//
+//===========================================================================
+
+Object CheelloBulletPuff
+{
+	Frame PUFFA { Light BPUFF1 }
+	Frame PUFFB { Light BPUFF2 }
+}
+
+Object CheelloRocket
+{
+	Frame MISLA { Light ROCKET }
+
+	Frame MISLB { Light ROCKET_X1 }
+	Frame MISLC { Light ROCKET_X2 }
+	Frame MISLD { Light ROCKET_X3 }
+
+	// voxelized explosion
+	Frame VISLB { Light ROCKET_X1 }
+	Frame VISLC { Light ROCKET_X2 }
+	Frame VISLD { Light ROCKET_X3 }
+}
+
+Object CheelloZombieMan
+{
+	Frame POSSF { Light ZOMBIEATK }
+}
+
+Object CheelloShotgunGuy
+{
+	Frame SPOSF { Light ZOMBIEATK }
+}
+
+Object CheelloLostSoul
+{
+	Frame SKULA { Light LOSTSOUL    }
+	Frame SKULB { Light LOSTSOUL    }
+	Frame SKULC { Light LOSTSOUL    }
+	Frame SKULD { Light LOSTSOUL    }
+	Frame SKULE { Light LOSTSOUL    }
+	Frame SKULF { Light LOSTSOUL    }
+	Frame SKULG { Light LOSTSOUL    }
+	Frame SKULH { Light LOSTSOUL_X1 }
+	Frame SKULI { Light LOSTSOUL_X2 }
+	Frame SKULJ { Light LOSTSOUL_X3 }
+	Frame SKULK { Light LOSTSOUL_X4 }
+}
+
+Object CheelloBlurSphere
+{
+	Frame PINS { Light BLURSPHERE1 }
+	Frame VINS { Light BLURSPHERE1 }
+}
+
+Object CheelloInvulnerabilitySphere
+{
+	Frame PINV { Light INVULN }
+	Frame VINV { Light INVULN }
+}
+
+Object CheelloSoulSphere
+{
+	Frame SOUL { Light SOULSPHERE }
+	Frame VOUL { Light SOULSPHERE }
+}
