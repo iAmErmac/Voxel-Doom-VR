@@ -5,7 +5,7 @@
 //===========================================================================
 
 // Super Shotgun
-sgn2a = "sgn2a" {}
+SGN2A = "SGN2A" {}
 
 //===========================================================================
 //
@@ -14,10 +14,10 @@ sgn2a = "sgn2a" {}
 //===========================================================================
 
 // Megasphere
-megaa = "megaa" { UseActorPitch }
-megab = "megab" { UseActorPitch }
-megac = "megac" { UseActorPitch }
-megad = "megad" { UseActorPitch }
+VEGAA = "VEGAA" { UseActorPitch }
+VEGAB = "VEGAB" { UseActorPitch }
+VEGAC = "VEGAC" { UseActorPitch }
+VEGAD = "VEGAD" { UseActorPitch }
 
 //===========================================================================
 //
@@ -26,230 +26,230 @@ megad = "megad" { UseActorPitch }
 //===========================================================================
 
 // Arachnotron
-bspia = "bspia" {}
-bspib = "bspib" {}
-bspic = "bspic" {}
-bspid = "bspid" {}
-bspie = "bspie" {}
-bspif = "bspif" {}
-bspig = "bspig" {}
-bspih = "bspih" {}
-bspii = "bspii" {}
-bspij = "bspij" { UseActorPitch UseActorRoll }
-bspik = "bspik" { UseActorPitch UseActorRoll }
-bspil = "bspil" { UseActorPitch UseActorRoll }
-bspim = "bspim" { UseActorPitch UseActorRoll }
-bspin = "bspin" { UseActorPitch UseActorRoll }
-bspio = "bspio" { UseActorPitch UseActorRoll }
-bspip = "bspip" { UseActorPitch UseActorRoll }
+BSPIA = "BSPIA" {}
+BSPIB = "BSPIB" {}
+BSPIC = "BSPIC" {}
+BSPID = "BSPID" {}
+BSPIE = "BSPIE" {}
+BSPIF = "BSPIF" {}
+BSPIG = "BSPIG" {}
+BSPIH = "BSPIH" {}
+BSPII = "BSPII" {}
+BSPIJ = "BSPIJ" { UseActorPitch UseActorRoll }
+BSPIK = "BSPIK" { UseActorPitch UseActorRoll }
+BSPIL = "BSPIL" { UseActorPitch UseActorRoll }
+BSPIM = "BSPIM" { UseActorPitch UseActorRoll }
+BSPIN = "BSPIN" { UseActorPitch UseActorRoll }
+BSPIO = "BSPIO" { UseActorPitch UseActorRoll }
+BSPIP = "BSPIP" { UseActorPitch UseActorRoll }
 
 /*
 // Arachnotron plasma
-aplsa = "aplsa" { UseActorPitch }
-aplsb = "aplsb" { UseActorPitch }
-apbxa = "apbxa" { UseActorPitch }
-apbxb = "apbxb" { UseActorPitch }
-apbxc = "apbxc" { UseActorPitch }
-apbxd = "apbxd" { UseActorPitch }
-apbxe = "apbxe" { UseActorPitch }
+APLSA = "APLSA" { UseActorPitch }
+APLSB = "APLSB" { UseActorPitch }
+APBXA = "APBXA" { UseActorPitch }
+APBXB = "APBXB" { UseActorPitch }
+APBXC = "APBXC" { UseActorPitch }
+APBXD = "APBXD" { UseActorPitch }
+APBXE = "APBXE" { UseActorPitch }
 */
 
 // Arch Vile
-vilea = "vilea" {}
-vileb = "vileb" {}
-vilec = "vilec" {}
-viled = "viled" {}
-vilee = "vilee" {}
-vilef = "vilef" {}
-vileg = "vileg" {}
-vileh = "vileh" {}
-vilei = "vilei" {}
-vilej = "vilej" {}
-vilek = "vilek" {}
-vilel = "vilel" {}
-vilem = "vilem" {}
-vilen = "vilen" {}
-vileo = "vileo" {}
-vilep = "vilep" {}
-vileq = "vileq" { UseActorPitch UseActorRoll }
-viler = "viler" { UseActorPitch UseActorRoll }
-viles = "viles" { UseActorPitch UseActorRoll }
-vilet = "vilet" { UseActorPitch UseActorRoll }
-vileu = "vileu" { UseActorPitch UseActorRoll }
-vilev = "vilev" { UseActorPitch UseActorRoll }
-vilew = "vilew" { UseActorPitch UseActorRoll }
-vilex = "vilex" { UseActorPitch UseActorRoll }
-viley = "viley" { UseActorPitch UseActorRoll }
-vilez = "vilez" { UseActorPitch UseActorRoll }
-vile[ = "vile[" {}
-//vile^ = "vile^" {}
-vil2a = "vil2a" {} // temporary hack!!!
-vile] = "vile]" {}
+VILEA = "VILEA" {}
+VILEB = "VILEB" {}
+VILEC = "VILEC" {}
+VILED = "VILED" {}
+VILEE = "VILEE" {}
+VILEF = "VILEF" {}
+VILEG = "VILEG" {}
+VILEH = "VILEH" {}
+VILEI = "VILEI" {}
+VILEJ = "VILEJ" {}
+VILEK = "VILEK" {}
+VILEL = "VILEL" {}
+VILEM = "VILEM" {}
+VILEN = "VILEN" {}
+VILEO = "VILEO" {}
+VILEP = "VILEP" {}
+VILEQ = "VILEQ" { UseActorPitch UseActorRoll }
+VILER = "VILER" { UseActorPitch UseActorRoll }
+VILES = "VILES" { UseActorPitch UseActorRoll }
+VILET = "VILET" { UseActorPitch UseActorRoll }
+VILEU = "VILEU" { UseActorPitch UseActorRoll }
+VILEV = "VILEV" { UseActorPitch UseActorRoll }
+VILEW = "VILEW" { UseActorPitch UseActorRoll }
+VILEX = "VILEX" { UseActorPitch UseActorRoll }
+VILEY = "VILEY" { UseActorPitch UseActorRoll }
+VILEZ = "VILEZ" { UseActorPitch UseActorRoll }
+VILE[ = "VILE[" {}
+//VILE^ = "VILE^" {}
+VIL2A = "VIL2A" {} // temporary hack!!!
+VILE] = "VILE]" {}
 
 /*
 // Arch Vile fire
-firea = "firea" {}
-fireb = "fireb" {}
-firec = "firec" {}
-fired = "fired" {}
-firee = "firee" {}
-firef = "firef" {}
-fireg = "fireg" {}
-fireh = "fireh" {}
+FIREA = "FIREA" {}
+FIREB = "FIREB" {}
+FIREC = "FIREC" {}
+FIRED = "FIRED" {}
+FIREE = "FIREE" {}
+FIREF = "FIREF" {}
+FIREG = "FIREG" {}
+FIREH = "FIREH" {}
 */
 
 // Chaingunner
-cposa = "cposa" {}
-cposb = "cposb" {}
-cposc = "cposc" {}
-cposd = "cposd" {}
-cpose = "cpose" {}
-cposf = "cposf" {}
-cposg = "cposg" {}
-cposh = "cposh" { UseActorPitch UseActorRoll }
-cposi = "cposi" { UseActorPitch UseActorRoll }
-cposj = "cposj" { UseActorPitch UseActorRoll }
-cposk = "cposk" { UseActorPitch UseActorRoll }
-cposl = "cposl" { UseActorPitch UseActorRoll }
-cposm = "cposm" { UseActorPitch UseActorRoll }
-cposn = "cposn" { UseActorPitch UseActorRoll }
+CPOSA = "CPOSA" {}
+CPOSB = "CPOSB" {}
+CPOSC = "CPOSC" {}
+CPOSD = "CPOSD" {}
+CPOSE = "CPOSE" {}
+CPOSF = "CPOSF" {}
+CPOSG = "CPOSG" {}
+CPOSH = "CPOSH" { UseActorPitch UseActorRoll }
+CPOSI = "CPOSI" { UseActorPitch UseActorRoll }
+CPOSJ = "CPOSJ" { UseActorPitch UseActorRoll }
+CPOSK = "CPOSK" { UseActorPitch UseActorRoll }
+CPOSL = "CPOSL" { UseActorPitch UseActorRoll }
+CPOSM = "CPOSM" { UseActorPitch UseActorRoll }
+CPOSN = "CPOSN" { UseActorPitch UseActorRoll }
 
 // Hell Knight
-bos2a = "bos2a" {}
-bos2b = "bos2b" {}
-bos2c = "bos2c" {}
-bos2d = "bos2d" {}
-bos2e = "bos2e" {}
-bos2f = "bos2f" {}
-bos2g = "bos2g" {}
-bos2h = "bos2h" {}
-bos2i = "bos2i" { UseActorPitch UseActorRoll }
-bos2j = "bos2j" { UseActorPitch UseActorRoll }
-bos2k = "bos2k" { UseActorPitch UseActorRoll }
-bos2l = "bos2l" { UseActorPitch UseActorRoll }
-bos2m = "bos2m" { UseActorPitch UseActorRoll }
-bos2n = "bos2n" { UseActorPitch UseActorRoll }
-bos2o = "bos2o" { UseActorPitch UseActorRoll }
+BOS2A = "BOS2A" {}
+BOS2B = "BOS2B" {}
+BOS2C = "BOS2C" {}
+BOS2D = "BOS2D" {}
+BOS2E = "BOS2E" {}
+BOS2F = "BOS2F" {}
+BOS2G = "BOS2G" {}
+BOS2H = "BOS2H" {}
+BOS2I = "BOS2I" { UseActorPitch UseActorRoll }
+BOS2J = "BOS2J" { UseActorPitch UseActorRoll }
+BOS2K = "BOS2K" { UseActorPitch UseActorRoll }
+BOS2L = "BOS2L" { UseActorPitch UseActorRoll }
+BOS2M = "BOS2M" { UseActorPitch UseActorRoll }
+BOS2N = "BOS2N" { UseActorPitch UseActorRoll }
+BOS2O = "BOS2O" { UseActorPitch UseActorRoll }
 
 // Mancubus
-fatta = "fatta" {}
-fattb = "fattb" {}
-fattc = "fattc" {}
-fattd = "fattd" {}
-fatte = "fatte" {}
-fattf = "fattf" {}
-fattg = "fattg" {}
-fatth = "fatth" {}
-fatti = "fatti" {}
-fattj = "fattj" {}
-fattk = "fattk" { UseActorPitch UseActorRoll }
-fattl = "fattl" { UseActorPitch UseActorRoll }
-fattm = "fattm" { UseActorPitch UseActorRoll }
-fattn = "fattn" { UseActorPitch UseActorRoll }
-fatto = "fatto" { UseActorPitch UseActorRoll }
-fattp = "fattp" { UseActorPitch UseActorRoll }
-fattq = "fattq" { UseActorPitch UseActorRoll }
-fattr = "fattr" { UseActorPitch UseActorRoll }
-fatts = "fatts" { UseActorPitch UseActorRoll }
-fattt = "fattt" { UseActorPitch UseActorRoll }
+FATTA = "FATTA" {}
+FATTB = "FATTB" {}
+FATTC = "FATTC" {}
+FATTD = "FATTD" {}
+FATTE = "FATTE" {}
+FATTF = "FATTF" {}
+FATTG = "FATTG" {}
+FATTH = "FATTH" {}
+FATTI = "FATTI" {}
+FATTJ = "FATTJ" {}
+FATTK = "FATTK" { UseActorPitch UseActorRoll }
+FATTL = "FATTL" { UseActorPitch UseActorRoll }
+FATTM = "FATTM" { UseActorPitch UseActorRoll }
+FATTN = "FATTN" { UseActorPitch UseActorRoll }
+FATTO = "FATTO" { UseActorPitch UseActorRoll }
+FATTP = "FATTP" { UseActorPitch UseActorRoll }
+FATTQ = "FATTQ" { UseActorPitch UseActorRoll }
+FATTR = "FATTR" { UseActorPitch UseActorRoll }
+FATTS = "FATTS" { UseActorPitch UseActorRoll }
+FATTT = "FATTT" { UseActorPitch UseActorRoll }
 
 /*
 // Mancubus flames
-manfa = "manfa" { UseActorPitch }
-manfb = "manfb" { UseActorPitch }
+MANFA = "MANFA" { UseActorPitch }
+MANFB = "MANFB" { UseActorPitch }
 */
 
 // Pain Elemental
-paina = "paina" { UseActorPitch }
-painb = "painb" { UseActorPitch }
-painc = "painc" { UseActorPitch }
-paind = "paind" { UseActorPitch }
-paine = "paine" { UseActorPitch }
-painf = "painf" { UseActorPitch }
-paing = "paing" { UseActorPitch }
-painh = "painh" { UseActorPitch UseActorRoll }
-paini = "paini" { UseActorPitch UseActorRoll }
-painj = "painj" { UseActorPitch UseActorRoll }
-paink = "paink" { UseActorPitch UseActorRoll }
-painl = "painl" { UseActorPitch UseActorRoll }
-painm = "painm" { UseActorPitch UseActorRoll }
+PAINA = "PAINA" { UseActorPitch }
+PAINB = "PAINB" { UseActorPitch }
+PAINC = "PAINC" { UseActorPitch }
+PAIND = "PAIND" { UseActorPitch }
+PAINE = "PAINE" { UseActorPitch }
+PAINF = "PAINF" { UseActorPitch }
+PAING = "PAING" { UseActorPitch }
+PAINH = "PAINH" { UseActorPitch UseActorRoll }
+PAINI = "PAINI" { UseActorPitch UseActorRoll }
+PAINJ = "PAINJ" { UseActorPitch UseActorRoll }
+PAINK = "PAINK" { UseActorPitch UseActorRoll }
+PAINL = "PAINL" { UseActorPitch UseActorRoll }
+PAINM = "PAINM" { UseActorPitch UseActorRoll }
 
 // Revenant
-skela = "skela" {}
-skelb = "skelb" {}
-skelc = "skelc" {}
-skeld = "skeld" {}
-skele = "skele" {}
-skelf = "skelf" {}
-skelg = "skelg" {}
-skelh = "skelh" {}
-skeli = "skeli" {}
-skelj = "skelj" {}
-skelk = "skelk" {}
-skell = "skell" { UseActorPitch UseActorRoll }
-skelm = "skelm" { UseActorPitch UseActorRoll }
-skeln = "skeln" { UseActorPitch UseActorRoll }
-skelo = "skelo" { UseActorPitch UseActorRoll }
-skelp = "skelp" { UseActorPitch UseActorRoll }
-skelq = "skelq" { UseActorPitch UseActorRoll }
+SKELA = "SKELA" {}
+SKELB = "SKELB" {}
+SKELC = "SKELC" {}
+SKELD = "SKELD" {}
+SKELE = "SKELE" {}
+SKELF = "SKELF" {}
+SKELG = "SKELG" {}
+SKELH = "SKELH" {}
+SKELI = "SKELI" {}
+SKELJ = "SKELJ" {}
+SKELK = "SKELK" {}
+SKELL = "SKELL" { UseActorPitch UseActorRoll }
+SKELM = "SKELM" { UseActorPitch UseActorRoll }
+SKELN = "SKELN" { UseActorPitch UseActorRoll }
+SKELO = "SKELO" { UseActorPitch UseActorRoll }
+SKELP = "SKELP" { UseActorPitch UseActorRoll }
+SKELQ = "SKELQ" { UseActorPitch UseActorRoll }
 
 /*
 // Revenant missile
-fatba = "fatba" { UseActorPitch }
-fatbb = "fatbb" { UseActorPitch }
-fbxpa = "fbxpa" { UseActorPitch }
-fbxpb = "fbxpb" { UseActorPitch }
-fbxpc = "fbxpc" { UseActorPitch }
+FATBA = "FATBA" { UseActorPitch }
+FATBB = "FATBB" { UseActorPitch }
+FBXPA = "FBXPA" { UseActorPitch }
+FBXPB = "FBXPB" { UseActorPitch }
+FBXPC = "FBXPC" { UseActorPitch }
 */
 
 // Cube
-bosfa = "bosfa" {}
-bosfb = "bosfb" {}
-bosfc = "bosfc" {}
-bosfd = "bosfd" {}
+BOSFA = "BOSFA" {}
+BOSFB = "BOSFB" {}
+BOSFC = "BOSFC" {}
+BOSFD = "BOSFD" {}
 
 // Romero
-bbrna = "bbrna" {}
-bbrnb = "bbrnb" {}
+BBRNA = "BBRNA" {}
+BBRNB = "BBRNB" {}
 
 // SS Soldier
-sswva = "sswva" {}
-sswvb = "sswvb" {}
-sswvc = "sswvc" {}
-sswvd = "sswvd" {}
-sswve = "sswve" {}
-sswvf = "sswvf" {}
-sswvg = "sswvg" {}
-sswvh = "sswvh" {}
-sswvi = "sswvi" { UseActorPitch UseActorRoll }
-sswvj = "sswvj" { UseActorPitch UseActorRoll }
-sswvk = "sswvk" { UseActorPitch UseActorRoll }
-sswvl = "sswvl" { UseActorPitch UseActorRoll }
-sswvm = "sswvm" { UseActorPitch UseActorRoll }
-sswvn = "sswvn" { UseActorPitch UseActorRoll }
-sswvo = "sswvo" { UseActorPitch UseActorRoll }
-sswvp = "sswvp" { UseActorPitch UseActorRoll }
-sswvq = "sswvq" { UseActorPitch UseActorRoll }
-sswvr = "sswvr" { UseActorPitch UseActorRoll }
-sswvs = "sswvs" { UseActorPitch UseActorRoll }
-sswvt = "sswvt" { UseActorPitch UseActorRoll }
-sswvu = "sswvu" { UseActorPitch UseActorRoll }
-sswvv = "sswvv" { UseActorPitch UseActorRoll }
+SSWVA = "SSWVA" {}
+SSWVB = "SSWVB" {}
+SSWVC = "SSWVC" {}
+SSWVD = "SSWVD" {}
+SSWVE = "SSWVE" {}
+SSWVF = "SSWVF" {}
+SSWVG = "SSWVG" {}
+SSWVH = "SSWVH" {}
+SSWVI = "SSWVI" { UseActorPitch UseActorRoll }
+SSWVJ = "SSWVJ" { UseActorPitch UseActorRoll }
+SSWVK = "SSWVK" { UseActorPitch UseActorRoll }
+SSWVL = "SSWVL" { UseActorPitch UseActorRoll }
+SSWVM = "SSWVM" { UseActorPitch UseActorRoll }
+SSWVN = "SSWVN" { UseActorPitch UseActorRoll }
+SSWVO = "SSWVO" { UseActorPitch UseActorRoll }
+SSWVP = "SSWVP" { UseActorPitch UseActorRoll }
+SSWVQ = "SSWVQ" { UseActorPitch UseActorRoll }
+SSWVR = "SSWVR" { UseActorPitch UseActorRoll }
+SSWVS = "SSWVS" { UseActorPitch UseActorRoll }
+SSWVT = "SSWVT" { UseActorPitch UseActorRoll }
+SSWVU = "SSWVU" { UseActorPitch UseActorRoll }
+SSWVV = "SSWVV" { UseActorPitch UseActorRoll }
 
 // Keen
-keena = "keena" {}
-keenb = "keenb" {}
-keenc = "keenc" {}
-keend = "keend" {}
-keene = "keene" {}
-keenf = "keenf" {}
-keeng = "keeng" {}
-keenh = "keenh" {}
-keeni = "keeni" {}
-keenj = "keenj" {}
-keenk = "keenk" {}
-keenl = "keenl" {}
-keenm = "keenm" {}
+KEENA = "KEENA" {}
+KEENB = "KEENB" {}
+KEENC = "KEENC" {}
+KEEND = "KEEND" {}
+KEENE = "KEENE" {}
+KEENF = "KEENF" {}
+KEENG = "KEENG" {}
+KEENH = "KEENH" {}
+KEENI = "KEENI" {}
+KEENJ = "KEENJ" {}
+KEENK = "KEENK" {}
+KEENL = "KEENL" {}
+KEENM = "KEENM" {}
 
 //===========================================================================
 //
@@ -289,48 +289,48 @@ ZF11A = "ZZZFAC11" {}
 //===========================================================================
 
 // Colon gibs
-pob1a = "pob1a" {}
+POB1A = "POB1A" {}
 
 // Blood puddle
-pob2a = "pob2a" {}
+POB2A = "POB2A" {}
 
 // Brain and spine
-brs1a = "brs1a" {}
+BRS1A = "BRS1A" {}
 
 // Small pool o' blood
-pob2a = "pob2a" {}
+POB2A = "POB2A" {}
 
 // Hanging with no guts
-hdb1a = "hdb1a" {}
+HDB1A = "HDB1A" {}
 
 // Hanging from bottom with no brain
-hdb2a = "hdb2a" {}
+HDB2A = "HDB2A" {}
 
 // Hanging from top, looking down
-hdb3a = "hdb3a" {}
+HDB3A = "HDB3A" {}
 
 // Hanging from top, skully
-hdb4a = "hdb4a" {}
+HDB4A = "HDB4A" {}
 
 // Hanging from top, looking up
-hdb5a = "hdb5a" {}
+HDB5A = "HDB5A" {}
 
 // Hanging from top without a brain
-hdb6a = "hdb6a" {}
+HDB6A = "HDB6A" {}
 
 // Tech lamp large
-tlmpa = "tlmpa" {}
-tlmpb = "tlmpb" {}
-tlmpc = "tlmpc" {}
-tlmpd = "tlmpd" {}
+TLMPA = "TLMPA" {}
+TLMPB = "TLMPB" {}
+TLMPC = "TLMPC" {}
+TLMPD = "TLMPD" {}
 
 // Tech lamp small
-tlp2a = "tlp2a" {}
-tlp2b = "tlp2b" {}
-tlp2c = "tlp2c" {}
-tlp2d = "tlp2d" {}
+TLP2A = "TLP2A" {}
+TLP2B = "TLP2B" {}
+TLP2C = "TLP2C" {}
+TLP2D = "TLP2D" {}
 
 // Burning barrel
-fcana = "fcana" {}
-fcanb = "fcanb" {}
-fcanc = "fcanc" {}
+FCANA = "FCANA" {}
+FCANB = "FCANB" {}
+FCANC = "FCANC" {}

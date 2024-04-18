@@ -2,9 +2,9 @@
 //
 // CHEELLO VOXEL DOOM
 //
-// ZScript code: Copyright (C) 2022 - 2023 Nash Muhandes
+// ZScript code: Copyright (C) 2022 - 2024 Nash Muhandes
 //
-// License: MIT
+// License: GPL v3.0
 //
 //===========================================================================
 
@@ -12,6 +12,8 @@
 //
 // CheelloRotateToCameraPlugin
 // Makes an actor always face the currently-viewed camera
+// (Currently only used on the sphere pickups and hackily used on the
+// Evil Eye)
 //
 //===========================================================================
 
@@ -22,6 +24,17 @@ class CheelloRotateToCameraPlugin : CheelloActorPlugin
 		Super.DoEffect();
 
 		if (!Owner)
+			return;
+
+		bool isSphere =
+		(
+			Owner is "InvulnerabilitySphere" ||
+			Owner is "Soulsphere" ||
+			Owner is "BlurSphere" ||
+			Owner is "Megasphere"
+		);
+
+		if (isSphere && !cheello_spherevoxel)
 			return;
 
 		// TO DO: remove this hack when angle-fixing maphacks get implemented

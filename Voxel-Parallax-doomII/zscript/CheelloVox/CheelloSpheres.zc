@@ -1,0 +1,81 @@
+//===========================================================================
+//
+// CHEELLO VOXEL DOOM
+//
+// ZScript code: Copyright (C) 2022 - 2024 Nash Muhandes
+//
+// License: GPL v3.0
+//
+//===========================================================================
+
+class CheelloBlurSphere : BlurSphere replaces BlurSphere
+{
+	Default
+	{
+		+FORCEXYBILLBOARD
+	}
+
+	private void A_SetVoxel(void)
+	{
+		sprite = !cheello_spherevoxel ? GetSpriteIndex('PINS') : GetSpriteIndex('VINS');
+	}
+
+	States
+	{
+	Spawn:
+		PINS ABCD 6 NoDelay Bright A_SetVoxel();
+		Loop;
+	SpriteCache:
+		PINS A 0;
+		VINS A 0;
+		Stop;
+	}
+}
+
+class CheelloInvulnerabilitySphere : InvulnerabilitySphere replaces InvulnerabilitySphere
+{
+	Default
+	{
+		+FORCEXYBILLBOARD
+	}
+
+	private void A_SetVoxel(void)
+	{
+		sprite = !cheello_spherevoxel ? GetSpriteIndex('PINV') : GetSpriteIndex('VINV');
+	}
+
+	States
+	{
+	Spawn:
+		PINV ABCD 6 NoDelay Bright A_SetVoxel();
+		Loop;
+	SpriteCache:
+		PINV A 0;
+		VINV A 0;
+		Stop;
+	}
+}
+
+class CheelloSoulsphere : Soulsphere replaces Soulsphere
+{
+	Default
+	{
+		+FORCEXYBILLBOARD
+	}
+
+	private void A_SetVoxel(void)
+	{
+		sprite = !cheello_spherevoxel ? GetSpriteIndex('SOUL') : GetSpriteIndex('VOUL');
+	}
+
+	States
+	{
+	Spawn:
+		SOUL ABCDCB 6 NoDelay Bright A_SetVoxel();
+		Loop;
+	SpriteCache:
+		SOUL A 0;
+		VOUL A 0;
+		Stop;
+	}
+}

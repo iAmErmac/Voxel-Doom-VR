@@ -2,9 +2,9 @@
 //
 // CHEELLO VOXEL DOOM
 //
-// ZScript code: Copyright (C) 2022 - 2023 Nash Muhandes
+// ZScript code: Copyright (C) 2022 - 2024 Nash Muhandes
 //
-// License: MIT
+// License: GPL v3.0
 //
 //===========================================================================
 
@@ -73,6 +73,12 @@ class CheelloVoxStatics
 		self.Pitch = (fpitch * ddiff2 - pitchAdjust);
 		self.Roll = -fpitch * ddiff1;
 		self.Angle = dang;
+	}
+
+	play static void FixZFighting(Actor self)
+	{
+		self.SetOrigin((self.pos.xy, self.pos.z + frandom[rnd_wofs](0.0, 0.10001)), false);
+		self.A_SetScale(frandom[rnd_wofs](self.Scale.X, self.Scale.X + 0.10001));
 	}
 
 	static bool IsSigil(void)

@@ -1,0 +1,94 @@
+// Voxelized rocket explosion "fake sprites"
+Sprite "VISLB0", 73, 60
+{
+	Offset 37, 29
+	Patch "MISLB0", 0, 0
+}
+
+Sprite "VISLC0", 88, 72
+{
+	Offset 42, 34
+	Patch "MISLC0", 0, 0
+}
+
+Sprite "VISLD0", 103, 86
+{
+	Offset 50, 43
+	Patch "MISLD0", 0, 0
+}
+
+// Voxelized invisibility sphere "fake sprites"
+Sprite "VINSA0", 25, 25
+{
+	Offset 11, 39
+	Patch "PINSA0", 0, 0
+}
+
+Sprite "VINSB0", 25, 25
+{
+	Offset 11, 39
+	Patch "PINSB0", 0, 0
+}
+
+Sprite "VINSC0", 25, 25
+{
+	Offset 11, 39
+	Patch "PINSC0", 0, 0
+}
+
+Sprite "VINSD0", 25, 25
+{
+	Offset 11, 39
+	Patch "PINSD0", 0, 0
+}
+
+// Voxelized invulnerability sphere "fake sprites"
+Sprite "VINVA0", 25, 25
+{
+	Offset 11, 23
+	Patch "PINVA0", 0, 0
+}
+
+Sprite "VINVB0", 25, 25
+{
+	Offset 11, 23
+	Patch "PINVB0", 0, 0
+}
+
+Sprite "VINVC0", 25, 25
+{
+	Offset 11, 23
+	Patch "PINVC0", 0, 0
+}
+
+Sprite "VINVD0", 25, 25
+{
+	Offset 11, 23
+	Patch "PINVD0", 0, 0
+}
+
+// Voxelized soul sphere "fake sprites"
+Sprite "VOULA0", 25, 25
+{
+	Offset 14, 39
+	Patch "SOULA0", 0, 0
+}
+
+Sprite "VOULA0", 25, 25
+{
+	Offset 14, 39
+	Patch "SOULB0", 0, 0
+}
+
+Sprite "VOULA0", 25, 25
+{
+	Offset 14, 39
+	Patch "SOULC0", 0, 0
+}
+
+Sprite "VOULA0", 25, 25
+{
+	Offset 14, 39
+	Patch "SOULD0", 0, 0
+}
+

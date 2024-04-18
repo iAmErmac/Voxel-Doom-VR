@@ -9,6 +9,8 @@ VOXELDOOMMNU_SMOOTHROT = "Smooth monster rotation";
 VOXELDOOMMNU_MPTT = "Pitch adjustment for flying monsters";
 VOXELDOOMMNU_FACEKILLER = "Monster faces player upon death";
 VOXELDOOMMNU_PRECACHE = "Precache voxels";
+VOXELDOOMMNU_ROCKEXPVOX = "Voxelized rocket explosion";
+VOXELDOOMMNU_SPHEREVOX = "Voxelized sphere pickups";
 VOXELDOOMMNU_ICONVOX = "Voxelized Icon of Sin";
 VOXELDOOMMNU_PARALLAX = "Parallax textures";
 
@@ -17,6 +19,8 @@ VOXELDOOMMNU_SMOOTHROT_TOOLTIP = "Monsters will smoothly rotate to face their ta
 VOXELDOOMMNU_MPTT_TOOLTIP = "Flying monsters will adjust their pitch to face their target.";
 VOXELDOOMMNU_FACEKILLER_TOOLTIP = "Monster will turn to face the player that killed it.";
 VOXELDOOMMNU_PRECACHE_TOOLTIP = "Preloads complete voxel animation frames upon entering a level. Reduces in-game stuttering at the expense of GPU memory usage.";
+VOXELDOOMMNU_ROCKEXPVOX_TOOLTIP = "";
+VOXELDOOMMNU_SPHEREVOX_TOOLTIP = "";
 VOXELDOOMMNU_ICONVOX_TOOLTIP = "";
 VOXELDOOMMNU_PARALLAX_TOOLTIP = "Use heightmaps to increase depth on wall and floor textures.";
 

@@ -1,6 +1,6 @@
 Title: Cheello's Voxel Doom
-Version: 2.3
-Release date: December 18th 2023
+Version: 2.4
+Release date: April 2024
 Engine: GZDoom 4.5 or higher and LZDoom 3.8
 https://twitter.com/DanielWienerson
 https://www.youtube.com/channel/UC1WkHfzyqhCMTOLCeBznygA
@@ -69,10 +69,10 @@ Voxel Doom features:
 //===========================================================================
 
 Cheello's Voxel Doom
-© 2021 - 2023 Daniel Peterson
+© 2021 - 2024 Daniel Peterson
 
 All voxel models and base VOXELDEF by Cheello
-ZScript code by Nash Muhandes (MIT licensed)
+ZScript code by Nash Muhandes (GPL v3.0 licensed)
 LZDoom and QuestZDoom compatibility fix by Ermac
 
 Special thanks:

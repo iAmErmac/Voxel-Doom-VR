@@ -1,0 +1,34 @@
+//===========================================================================
+//
+// CHEELLO VOXEL DOOM
+//
+// ZScript code: Copyright (C) 2022 - 2024 Nash Muhandes
+//
+// License: GPL v3.0
+//
+//===========================================================================
+
+class CheelloMegasphere : Megasphere replaces Megasphere
+{
+	Default
+	{
+		+FORCEXYBILLBOARD
+	}
+
+	// needs to be an action function because of its CustomInventory heritage...
+	private action void A_SetVoxel(void)
+	{
+		sprite = !cheello_spherevoxel ? GetSpriteIndex('MEGA') : GetSpriteIndex('VEGA');
+	}
+
+	States
+	{
+	Spawn:
+		MEGA ABCD 6 NoDelay Bright A_SetVoxel();
+		Loop;
+	SpriteCache:
+		MEGA A 0;
+		VEGA A 0;
+		Stop;
+	}
+}

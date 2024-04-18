@@ -12,10 +12,16 @@ Object CheelloBulletPuff
 
 Object CheelloRocket
 {
-	Frame MISLA { Light ROCKET    }
+	Frame MISLA { Light ROCKET }
+
 	Frame MISLB { Light ROCKET_X1 }
 	Frame MISLC { Light ROCKET_X2 }
 	Frame MISLD { Light ROCKET_X3 }
+
+	// voxelized explosion
+	Frame VISLB { Light ROCKET_X1 }
+	Frame VISLC { Light ROCKET_X2 }
+	Frame VISLD { Light ROCKET_X3 }
 }
 
 Object CheelloZombieMan
@@ -41,6 +47,24 @@ Object CheelloLostSoul
 	Frame SKULI { Light LOSTSOUL_X2 }
 	Frame SKULJ { Light LOSTSOUL_X3 }
 	Frame SKULK { Light LOSTSOUL_X4 }
+}
+
+Object CheelloBlurSphere
+{
+	Frame PINS { Light BLURSPHERE1 }
+	Frame VINS { Light BLURSPHERE1 }
+}
+
+Object CheelloInvulnerabilitySphere
+{
+	Frame PINV { Light INVULN }
+	Frame VINV { Light INVULN }
+}
+
+Object CheelloSoulSphere
+{
+	Frame SOUL { Light SOULSPHERE }
+	Frame VOUL { Light SOULSPHERE }
 }
 
 //===========================================================================

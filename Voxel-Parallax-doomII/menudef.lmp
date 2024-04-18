@@ -1,13 +1,13 @@
 AddOptionMenu "OptionsMenu"
 {
-	StaticText "VOXEL DOOM v2.3"
+	StaticText "VOXEL DOOM v2.4"
 	Submenu "$OPTMNU_VOXELDOOMOPTS", "VoxelDoomOptionMenu"
 	StaticText ""
 }
 
 AddOptionMenu "OptionsMenuSimple"
 {
-	StaticText "VOXEL DOOM v2.3"
+	StaticText "VOXEL DOOM v2.4"
 	Submenu "$OPTMNU_VOXELDOOMOPTS", "VoxelDoomOptionMenu"
 	StaticText ""
 }
@@ -20,6 +20,8 @@ OptionMenu "VoxelDoomOptionMenu"
 	CheelloOption "$VOXELDOOMMNU_SMOOTHROT",	"$VOXELDOOMMNU_SMOOTHROT_TOOLTIP",	"cheello_smoothmonsterrotation",	"OnOff"
 	CheelloOption "$VOXELDOOMMNU_MPTT",			"$VOXELDOOMMNU_MPTT_TOOLTIP",		"cheello_monsterpitchtotarget",		"OnOff"
 	CheelloOption "$VOXELDOOMMNU_FACEKILLER",	"$VOXELDOOMMNU_FACEKILLER_TOOLTIP",	"cheello_monsterfaceskiller",		"OnOff"
+	CheelloOption "$VOXELDOOMMNU_ROCKEXPVOX",	"$VOXELDOOMMNU_ROCKEXPVOX_TOOLTIP",	"cheello_explosionvoxel",			"OnOff"
+	CheelloOption "$VOXELDOOMMNU_SPHEREVOX",	"$VOXELDOOMMNU_SPHEREVOX_TOOLTIP",	"cheello_spherevoxel",				"OnOff"
 	CheelloOption "$VOXELDOOMMNU_PRECACHE",		"$VOXELDOOMMNU_PRECACHE_TOOLTIP",	"cheello_precachevoxels",			"OnOff"
 }
 

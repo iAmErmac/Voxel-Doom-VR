@@ -2,9 +2,9 @@
 //
 // CHEELLO VOXEL DOOM
 //
-// ZScript code: Copyright (C) 2022 - 2023 Nash Muhandes
+// ZScript code: Copyright (C) 2022 - 2024 Nash Muhandes
 //
-// License: MIT
+// License: GPL v3.0
 //
 //===========================================================================
 
@@ -34,10 +34,42 @@ class CheelloRocket : Rocket replaces Rocket
 		Super.PostBeginPlay();
 	}
 
+	private void A_SetExplosionVoxel(void)
+	{
+		sprite = !cheello_explosionvoxel ? GetSpriteIndex('MISL') : GetSpriteIndex('VISL');
+
+		// respect ZDoom translucency options if in sprite form
+		if (!cheello_explosionvoxel)
+		{
+			A_SetRenderStyle(1.0, STYLE_Add);
+			bZDoomTrans = true;
+		}
+	}
+
 	States
 	{
 	Spawn:
 		MISL A 1 NoDelay Bright A_FaceMovementDirection();
 		Loop;
+	Death:
+		#### B 0 A_SetExplosionVoxel();
+		#### B 8 Bright A_Explode();
+		#### C 6 Bright;
+		#### D 4 Bright;
+		Stop;
+	BrainExplode:
+		#### B 0 A_SetExplosionVoxel();
+		#### BC 10 Bright;
+		#### D 10 A_BrainExplode();
+		Stop;
+	}
+
+	// sprite caching is needed to dynamically change sprites in A_SetExplosionVoxel
+	States
+	{
+	SpriteCache:
+		VISL A 0;
+		MISL A 0;
+		Stop;
 	}
 }

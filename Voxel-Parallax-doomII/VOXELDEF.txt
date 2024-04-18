@@ -5,61 +5,61 @@
 //===========================================================================
 
 // Chainsaw
-csawa = "csawa" {}
+CSAWA = "CSAWA" {}
 
 // Pistol
-pista = "pista" {}
+PISTA = "PISTA" {}
 
 // Shotgun
-shota = "shota" {}
+SHOTA = "SHOTA" {}
 
 // Chaingun
-mguna = "mguna" {}
+MGUNA = "MGUNA" {}
 
 // Rocket Launcher
-launa = "launa" {}
+LAUNA = "LAUNA" {}
 
 // Plasma Rifle
-plasa = "plasa" {}
+PLASA = "PLASA" {}
 
 // BFG9000
-bfuga = "bfuga" {}
+BFUGA = "BFUGA" {}
 
 // Bullet (clip)
-clipa = "clipa" { AngleOffset = 270 }
+CLIPA = "CLIPA" { AngleOffset = 270 }
 
 // Bullets (box)
-ammoa = "ammoa" { AngleOffset = 270 }
+AMMOA = "AMMOA" { AngleOffset = 270 }
 
 // Shells
-shela = "shela" {}
+SHELA = "SHELA" {}
 
 // Shells (box)
-sboxa = "sboxa" {}
+SBOXA = "SBOXA" {}
 
 // Rocket ammo
-rocka = "rocka" {}
+ROCKA = "ROCKA" {}
 
 // Rocket ammo (box)
-broka = "broka" { AngleOffset = 270 }
+BROKA = "BROKA" { AngleOffset = 270 }
 
 // Cell (small)
-cella = "cella" {}
+CELLA = "CELLA" {}
 
 // Cell (big)
-celpa = "celpa" {}
+CELPA = "CELPA" {}
 
 // Rocket projectile
-misla = "misla" { UseActorPitch }
+MISLA = "MISLA" { UseActorPitch }
 
 /*
 // Plasma projectile
-plssa = "plssa" { UseActorPitch }
-plssb = "plssb" { UseActorPitch }
+PLSSA = "PLSSA" { UseActorPitch }
+PLSSB = "PLSSB" { UseActorPitch }
 
 // BFG9000 projectile
-bfs1a = "bfs1a" {}
-bfs1b = "bfs1b" {}
+BFS1A = "BFS1A" {}
+BFS1B = "BFS1B" {}
 */
 
 //===========================================================================
@@ -69,38 +69,40 @@ bfs1b = "bfs1b" {}
 //===========================================================================
 
 // Berserk
-pstra = "pstra" {}
+PSTRA = "PSTRA" {}
 
 // Light Amp Goggles
-pvisa = "pvisa" {}
-pvisb = "pvisb" {}
+PVISA = "PVISA" {}
+PVISB = "PVISB" {}
 
 // Computer Area Map
-pmapa = "pmapa" {}
-pmapb = "pmapb" {}
-pmapc = "pmapc" {}
-pmapd = "pmapd" {}
+PMAPA = "PMAPA" {}
+PMAPB = "PMAPB" {}
+PMAPC = "PMAPC" {}
+PMAPD = "PMAPD" {}
 
 // Radiation Suit
-suita = "suita" {}
+SUITA = "SUITA" {}
+
+// For the spheres, same case with the rocket explosion - we use different sprites so that they may be toggle-able
 
 // Invulnerability Sphere
-pinva = "pinva" { UseActorPitch }
-pinvb = "pinvb" { UseActorPitch }
-pinvc = "pinvc" { UseActorPitch }
-pinvd = "pinvd" { UseActorPitch }
+VINVA = "VINVA" { UseActorPitch }
+VINVB = "VINVB" { UseActorPitch }
+VINVC = "VINVC" { UseActorPitch }
+VINVD = "VINVD" { UseActorPitch }
 
 // Soul Sphere
-soula = "soula" { UseActorPitch }
-soulb = "soulb" { UseActorPitch }
-soulc = "soulc" { UseActorPitch }
-sould = "sould" { UseActorPitch }
+VOULA = "VOULA" { UseActorPitch }
+VOULB = "VOULB" { UseActorPitch }
+VOULC = "VOULC" { UseActorPitch }
+VOULD = "VOULD" { UseActorPitch }
 
 // Invisibility Sphere
-pinsa = "pinsa" { UseActorPitch }
-pinsb = "pinsb" { UseActorPitch }
-pinsc = "pinsc" { UseActorPitch }
-pinsd = "pinsd" { UseActorPitch }
+VINSA = "VINSA" { UseActorPitch }
+VINSB = "VINSB" { UseActorPitch }
+VINSC = "VINSC" { UseActorPitch }
+VINSD = "VINSD" { UseActorPitch }
 
 //===========================================================================
 //
@@ -109,57 +111,57 @@ pinsd = "pinsd" { UseActorPitch }
 //===========================================================================
 
 // Stimpack
-stima = "stima" { AngleOffset = 270 }
+STIMA = "STIMA" { AngleOffset = 270 }
 
 // Medikit
-media = "media" { AngleOffset = 270 }
+MEDIA = "MEDIA" { AngleOffset = 270 }
 
 // Green Armor
-arm1a = "arm1a" {}
-arm1b = "arm1b" {}
+ARM1A = "ARM1A" {}
+ARM1B = "ARM1B" {}
 
 // Blue Armor
-arm2a = "arm2a" {}
-arm2b = "arm2b" {}
+ARM2A = "ARM2A" {}
+ARM2B = "ARM2B" {}
 
 // Health Bonus
-bon1a = "bon1a" {}
-bon1b = "bon1b" {}
-bon1c = "bon1c" {}
-bon1d = "bon1d" {}
+BON1A = "BON1A" {}
+BON1B = "BON1B" {}
+BON1C = "BON1C" {}
+BON1D = "BON1D" {}
 
 // Armor Bonus
-bon2a = "bon2a" {}
-bon2b = "bon2b" {}
-bon2c = "bon2c" {}
-bon2d = "bon2d" {}
+BON2A = "BON2A" {}
+BON2B = "BON2B" {}
+BON2C = "BON2C" {}
+BON2D = "BON2D" {}
 
 // Blue Keycard
-bkeya = "bkeya" {}
-bkeyb = "bkeyb" {}
+BKEYA = "BKEYA" {}
+BKEYB = "BKEYB" {}
 
 // Red Keycard
-rkeya = "rkeya" {}
-rkeyb = "rkeyb" {}
+RKEYA = "RKEYA" {}
+RKEYB = "RKEYB" {}
 
 // Yellow Keycard
-ykeya = "ykeya" {}
-ykeyb = "ykeyb" {}
+YKEYA = "YKEYA" {}
+YKEYB = "YKEYB" {}
 
 // Blue Skull Key
-bskua = "bskua" {}
-bskub = "bskub" {}
+BSKUA = "BSKUA" {}
+BSKUB = "BSKUB" {}
 
 // Red Skull Key
-rskua = "rskua" {}
-rskub = "rskub" {}
+RSKUA = "RSKUA" {}
+RSKUB = "RSKUB" {}
 
 // Yellow Skull Key
-yskua = "yskua" {}
-yskub = "yskub" {}
+YSKUA = "YSKUA" {}
+YSKUB = "YSKUB" {}
 
 // Backpack
-bpaka = "bpaka" {}
+BPAKA = "BPAKA" {}
 
 //===========================================================================
 //
@@ -168,223 +170,223 @@ bpaka = "bpaka" {}
 //===========================================================================
 
 // Zombie Man
-possa = "possa" {}
-possb = "possb" {}
-possc = "possc" {}
-possd = "possd" {}
-posse = "posse" {}
-possf = "possf" {}
-possg = "possg" {}
-possh = "possh" { UseActorPitch UseActorRoll }
-possi = "possi" { UseActorPitch UseActorRoll }
-possj = "possj" { UseActorPitch UseActorRoll }
-possk = "possk" { UseActorPitch UseActorRoll }
-possl = "possl" { UseActorPitch UseActorRoll }
-possm = "possm" { UseActorPitch UseActorRoll }
-possn = "possn" { UseActorPitch UseActorRoll }
-posso = "posso" { UseActorPitch UseActorRoll }
-possp = "possp" { UseActorPitch UseActorRoll }
-possq = "possq" { UseActorPitch UseActorRoll }
-possr = "possr" { UseActorPitch UseActorRoll }
-posss = "posss" { UseActorPitch UseActorRoll }
-posst = "posst" { UseActorPitch UseActorRoll }
-possu = "possu" { UseActorPitch UseActorRoll }
+POSSA = "POSSA" {}
+POSSB = "POSSB" {}
+POSSC = "POSSC" {}
+POSSD = "POSSD" {}
+POSSE = "POSSE" {}
+POSSF = "POSSF" {}
+POSSG = "POSSG" {}
+POSSH = "POSSH" { UseActorPitch UseActorRoll }
+POSSI = "POSSI" { UseActorPitch UseActorRoll }
+POSSJ = "POSSJ" { UseActorPitch UseActorRoll }
+POSSK = "POSSK" { UseActorPitch UseActorRoll }
+POSSL = "POSSL" { UseActorPitch UseActorRoll }
+POSSM = "POSSM" { UseActorPitch UseActorRoll }
+POSSN = "POSSN" { UseActorPitch UseActorRoll }
+POSSO = "POSSO" { UseActorPitch UseActorRoll }
+POSSP = "POSSP" { UseActorPitch UseActorRoll }
+POSSQ = "POSSQ" { UseActorPitch UseActorRoll }
+POSSR = "POSSR" { UseActorPitch UseActorRoll }
+POSSS = "POSSS" { UseActorPitch UseActorRoll }
+POSST = "POSST" { UseActorPitch UseActorRoll }
+POSSU = "POSSU" { UseActorPitch UseActorRoll }
 
 // Shotgun Guy
-sposa = "sposa" {}
-sposb = "sposb" {}
-sposc = "sposc" {}
-sposd = "sposd" {}
-spose = "spose" {}
-sposf = "sposf" {}
-sposg = "sposg" {}
-sposh = "sposh" { UseActorPitch UseActorRoll }
-sposi = "sposi" { UseActorPitch UseActorRoll }
-sposj = "sposj" { UseActorPitch UseActorRoll }
-sposk = "sposk" { UseActorPitch UseActorRoll }
-sposl = "sposl" { UseActorPitch UseActorRoll }
-sposm = "sposm" { UseActorPitch UseActorRoll }
-sposn = "sposn" { UseActorPitch UseActorRoll }
-sposo = "sposo" { UseActorPitch UseActorRoll }
-sposp = "sposp" { UseActorPitch UseActorRoll }
-sposq = "sposq" { UseActorPitch UseActorRoll }
-sposr = "sposr" { UseActorPitch UseActorRoll }
-sposs = "sposs" { UseActorPitch UseActorRoll }
-spost = "spost" { UseActorPitch UseActorRoll }
-sposu = "sposu" { UseActorPitch UseActorRoll }
+SPOSA = "SPOSA" {}
+SPOSB = "SPOSB" {}
+SPOSC = "SPOSC" {}
+SPOSD = "SPOSD" {}
+SPOSE = "SPOSE" {}
+SPOSF = "SPOSF" {}
+SPOSG = "SPOSG" {}
+SPOSH = "SPOSH" { UseActorPitch UseActorRoll }
+SPOSI = "SPOSI" { UseActorPitch UseActorRoll }
+SPOSJ = "SPOSJ" { UseActorPitch UseActorRoll }
+SPOSK = "SPOSK" { UseActorPitch UseActorRoll }
+SPOSL = "SPOSL" { UseActorPitch UseActorRoll }
+SPOSM = "SPOSM" { UseActorPitch UseActorRoll }
+SPOSN = "SPOSN" { UseActorPitch UseActorRoll }
+SPOSO = "SPOSO" { UseActorPitch UseActorRoll }
+SPOSP = "SPOSP" { UseActorPitch UseActorRoll }
+SPOSQ = "SPOSQ" { UseActorPitch UseActorRoll }
+SPOSR = "SPOSR" { UseActorPitch UseActorRoll }
+SPOSS = "SPOSS" { UseActorPitch UseActorRoll }
+SPOST = "SPOST" { UseActorPitch UseActorRoll }
+SPOSU = "SPOSU" { UseActorPitch UseActorRoll }
 
 // Imp
-trooa = "trooa" {}
-troob = "troob" {}
-trooc = "trooc" {}
-trood = "trood" {}
-trooe = "trooe" {}
-troof = "troof" {}
-troog = "troog" {}
-trooh = "trooh" {}
-trooi = "trooi" { UseActorPitch UseActorRoll }
-trooj = "trooj" { UseActorPitch UseActorRoll }
-trook = "trook" { UseActorPitch UseActorRoll }
-trool = "trool" { UseActorPitch UseActorRoll }
-troom = "troom" { UseActorPitch UseActorRoll }
-troon = "troon" { UseActorPitch UseActorRoll }
-trooo = "trooo" { UseActorPitch UseActorRoll }
-troop = "troop" { UseActorPitch UseActorRoll }
-trooq = "trooq" { UseActorPitch UseActorRoll }
-troor = "troor" { UseActorPitch UseActorRoll }
-troos = "troos" { UseActorPitch UseActorRoll }
-troot = "troot" { UseActorPitch UseActorRoll }
-troou = "troou" { UseActorPitch UseActorRoll }
+TROOA = "TROOA" {}
+TROOB = "TROOB" {}
+TROOC = "TROOC" {}
+TROOD = "TROOD" {}
+TROOE = "TROOE" {}
+TROOF = "TROOF" {}
+TROOG = "TROOG" {}
+TROOH = "TROOH" {}
+TROOI = "TROOI" { UseActorPitch UseActorRoll }
+TROOJ = "TROOJ" { UseActorPitch UseActorRoll }
+TROOK = "TROOK" { UseActorPitch UseActorRoll }
+TROOL = "TROOL" { UseActorPitch UseActorRoll }
+TROOM = "TROOM" { UseActorPitch UseActorRoll }
+TROON = "TROON" { UseActorPitch UseActorRoll }
+TROOO = "TROOO" { UseActorPitch UseActorRoll }
+TROOP = "TROOP" { UseActorPitch UseActorRoll }
+TROOQ = "TROOQ" { UseActorPitch UseActorRoll }
+TROOR = "TROOR" { UseActorPitch UseActorRoll }
+TROOS = "TROOS" { UseActorPitch UseActorRoll }
+TROOT = "TROOT" { UseActorPitch UseActorRoll }
+TROOU = "TROOU" { UseActorPitch UseActorRoll }
 
 /*
 // Imp fireball
-bal1a = "bal1a" { UseActorPitch }
-bal1b = "bal1b" { UseActorPitch }
-bal1c = "bal1c" { UseActorPitch }
-bal1d = "bal1d" { UseActorPitch }
-bal1e = "bal1e" { UseActorPitch }
+BAL1A = "BAL1A" { UseActorPitch }
+BAL1B = "BAL1B" { UseActorPitch }
+BAL1C = "BAL1C" { UseActorPitch }
+BAL1D = "BAL1D" { UseActorPitch }
+BAL1E = "BAL1E" { UseActorPitch }
 */
 
 // Pinky
-sarga = "sarga" {}
-sargb = "sargb" {}
-sargc = "sargc" {}
-sargd = "sargd" {}
-sarge = "sarge" {}
-sargf = "sargf" {}
-sargh = "sargh" {}
-sargi = "sargi" { UseActorPitch UseActorRoll }
-sargj = "sargj" { UseActorPitch UseActorRoll }
-sargk = "sargk" { UseActorPitch UseActorRoll }
-sargl = "sargl" { UseActorPitch UseActorRoll }
-sargm = "sargm" { UseActorPitch UseActorRoll }
-sargn = "sargn" { UseActorPitch UseActorRoll }
+SARGA = "SARGA" {}
+SARGB = "SARGB" {}
+SARGC = "SARGC" {}
+SARGD = "SARGD" {}
+SARGE = "SARGE" {}
+SARGF = "SARGF" {}
+SARGH = "SARGH" {}
+SARGI = "SARGI" { UseActorPitch UseActorRoll }
+SARGJ = "SARGJ" { UseActorPitch UseActorRoll }
+SARGK = "SARGK" { UseActorPitch UseActorRoll }
+SARGL = "SARGL" { UseActorPitch UseActorRoll }
+SARGM = "SARGM" { UseActorPitch UseActorRoll }
+SARGN = "SARGN" { UseActorPitch UseActorRoll }
 
 // Cacodemon
-heada = "heada" { UseActorPitch }
-headb = "headb" { UseActorPitch }
-headc = "headc" { UseActorPitch }
-headd = "headd" { UseActorPitch }
-heade = "heade" { UseActorPitch }
-headf = "headf" { UseActorPitch }
-headg = "headg" { UseActorPitch UseActorRoll }
-headh = "headh" { UseActorPitch UseActorRoll }
-headi = "headi" { UseActorPitch UseActorRoll }
-headj = "headj" { UseActorPitch UseActorRoll }
-headk = "headk" { UseActorPitch UseActorRoll }
-headl = "headl" { UseActorPitch UseActorRoll }
+HEADA = "HEADA" { UseActorPitch }
+HEADB = "HEADB" { UseActorPitch }
+HEADC = "HEADC" { UseActorPitch }
+HEADD = "HEADD" { UseActorPitch }
+HEADE = "HEADE" { UseActorPitch }
+HEADF = "HEADF" { UseActorPitch }
+HEADG = "HEADG" { UseActorPitch UseActorRoll }
+HEADH = "HEADH" { UseActorPitch UseActorRoll }
+HEADI = "HEADI" { UseActorPitch UseActorRoll }
+HEADJ = "HEADJ" { UseActorPitch UseActorRoll }
+HEADK = "HEADK" { UseActorPitch UseActorRoll }
+HEADL = "HEADL" { UseActorPitch UseActorRoll }
 
 /*
 // Cacodemon fireball
-bal2a = "bal2a" { UseActorPitch }
-bal2b = "bal2b" { UseActorPitch }
-bal2c = "bal2c" { UseActorPitch }
-bal2d = "bal2d" { UseActorPitch }
-bal2e = "bal2e" { UseActorPitch }
+BAL2A = "BAL2A" { UseActorPitch }
+BAL2B = "BAL2B" { UseActorPitch }
+BAL2C = "BAL2C" { UseActorPitch }
+BAL2D = "BAL2D" { UseActorPitch }
+BAL2E = "BAL2E" { UseActorPitch }
 */
 
 // Lost Soul
-skula = "skula" { UseActorPitch }
-skulb = "skulb" { UseActorPitch }
-skulc = "skulc" { UseActorPitch }
-skuld = "skuld" { UseActorPitch }
-skule = "skule" { UseActorPitch }
-skulf = "skulf" { UseActorPitch UseActorRoll }
-skulg = "skulg" { UseActorPitch UseActorRoll }
-skulh = "skulh" { UseActorPitch UseActorRoll }
-skuli = "skuli" { UseActorPitch UseActorRoll }
-skulj = "skulj" { UseActorPitch UseActorRoll }
-skulk = "skulk" { UseActorPitch UseActorRoll }
+SKULA = "SKULA" { UseActorPitch }
+SKULB = "SKULB" { UseActorPitch }
+SKULC = "SKULC" { UseActorPitch }
+SKULD = "SKULD" { UseActorPitch }
+SKULE = "SKULE" { UseActorPitch }
+SKULF = "SKULF" { UseActorPitch UseActorRoll }
+SKULG = "SKULG" { UseActorPitch UseActorRoll }
+SKULH = "SKULH" { UseActorPitch UseActorRoll }
+SKULI = "SKULI" { UseActorPitch UseActorRoll }
+SKULJ = "SKULJ" { UseActorPitch UseActorRoll }
+SKULK = "SKULK" { UseActorPitch UseActorRoll }
 
 // Baron of Hell
-bossa = "bossa" {}
-bossb = "bossb" {}
-bossc = "bossc" {}
-bossd = "bossd" {}
-bosse = "bosse" {}
-bossf = "bossf" {}
-bossg = "bossg" {}
-bossh = "bossh" {}
-bossi = "bossi" { UseActorPitch UseActorRoll }
-bossj = "bossj" { UseActorPitch UseActorRoll }
-bossk = "bossk" { UseActorPitch UseActorRoll }
-bossl = "bossl" { UseActorPitch UseActorRoll }
-bossm = "bossm" { UseActorPitch UseActorRoll }
-bossn = "bossn" { UseActorPitch UseActorRoll }
-bosso = "bosso" { UseActorPitch UseActorRoll }
+BOSSA = "BOSSA" {}
+BOSSB = "BOSSB" {}
+BOSSC = "BOSSC" {}
+BOSSD = "BOSSD" {}
+BOSSE = "BOSSE" {}
+BOSSF = "BOSSF" {}
+BOSSG = "BOSSG" {}
+BOSSH = "BOSSH" {}
+BOSSI = "BOSSI" { UseActorPitch UseActorRoll }
+BOSSJ = "BOSSJ" { UseActorPitch UseActorRoll }
+BOSSK = "BOSSK" { UseActorPitch UseActorRoll }
+BOSSL = "BOSSL" { UseActorPitch UseActorRoll }
+BOSSM = "BOSSM" { UseActorPitch UseActorRoll }
+BOSSN = "BOSSN" { UseActorPitch UseActorRoll }
+BOSSO = "BOSSO" { UseActorPitch UseActorRoll }
 
 /*
 // Baron fireball
-bal7a = "bal7a" { UseActorPitch }
-bal7b = "bal7b" { UseActorPitch }
-bal7c = "bal7c" { UseActorPitch }
-bal7d = "bal7d" { UseActorPitch }
-bal7e = "bal7e" { UseActorPitch }
+BAL7A = "BAL7A" { UseActorPitch }
+BAL7B = "BAL7B" { UseActorPitch }
+BAL7C = "BAL7C" { UseActorPitch }
+BAL7D = "BAL7D" { UseActorPitch }
+BAL7E = "BAL7E" { UseActorPitch }
 */
 
 // Cyberdemon
-cybra = "cybra" {}
-cybrb = "cybrb" {}
-cybrc = "cybrc" {}
-cybrd = "cybrd" {}
-cybre = "cybre" {}
-cybrf = "cybrf" {}
-cybrg = "cybrg" {}
-cybrh = "cybrh" { UseActorPitch UseActorRoll }
-cybri = "cybri" { UseActorPitch UseActorRoll }
-cybrj = "cybrj" { UseActorPitch UseActorRoll }
-cybrk = "cybrk" { UseActorPitch UseActorRoll }
-cybrl = "cybrl" { UseActorPitch UseActorRoll }
-cybrm = "cybrm" { UseActorPitch UseActorRoll }
-cybrn = "cybrn" { UseActorPitch UseActorRoll }
-cybro = "cybro" { UseActorPitch UseActorRoll }
-cybrp = "cybrp" { UseActorPitch UseActorRoll }
+CYBRA = "CYBRA" {}
+CYBRB = "CYBRB" {}
+CYBRC = "CYBRC" {}
+CYBRD = "CYBRD" {}
+CYBRE = "CYBRE" {}
+CYBRF = "CYBRF" {}
+CYBRG = "CYBRG" {}
+CYBRH = "CYBRH" { UseActorPitch UseActorRoll }
+CYBRI = "CYBRI" { UseActorPitch UseActorRoll }
+CYBRJ = "CYBRJ" { UseActorPitch UseActorRoll }
+CYBRK = "CYBRK" { UseActorPitch UseActorRoll }
+CYBRL = "CYBRL" { UseActorPitch UseActorRoll }
+CYBRM = "CYBRM" { UseActorPitch UseActorRoll }
+CYBRN = "CYBRN" { UseActorPitch UseActorRoll }
+CYBRO = "CYBRO" { UseActorPitch UseActorRoll }
+CYBRP = "CYBRP" { UseActorPitch UseActorRoll }
 
 // Spider Mastermind
-spida = "spida" {}
-spidb = "spidb" {}
-spidc = "spidc" {}
-spidd = "spidd" {}
-spide = "spide" {}
-spidf = "spidf" {}
-spidg = "spidg" {}
-spidh = "spidh" {}
-spidi = "spidi" {}
-spidj = "spidj" { UseActorPitch UseActorRoll }
-spidk = "spidk" { UseActorPitch UseActorRoll }
-spidl = "spidl" { UseActorPitch UseActorRoll }
-spidm = "spidm" { UseActorPitch UseActorRoll }
-spidn = "spidn" { UseActorPitch UseActorRoll }
-spido = "spido" { UseActorPitch UseActorRoll }
-spidp = "spidp" { UseActorPitch UseActorRoll }
-spidq = "spidq" { UseActorPitch UseActorRoll }
-spidr = "spidr" { UseActorPitch UseActorRoll }
-spids = "spids" { UseActorPitch UseActorRoll }
+SPIDA = "SPIDA" {}
+SPIDB = "SPIDB" {}
+SPIDC = "SPIDC" {}
+SPIDD = "SPIDD" {}
+SPIDE = "SPIDE" {}
+SPIDF = "SPIDF" {}
+SPIDG = "SPIDG" {}
+SPIDH = "SPIDH" {}
+SPIDI = "SPIDI" {}
+SPIDJ = "SPIDJ" { UseActorPitch UseActorRoll }
+SPIDK = "SPIDK" { UseActorPitch UseActorRoll }
+SPIDL = "SPIDL" { UseActorPitch UseActorRoll }
+SPIDM = "SPIDM" { UseActorPitch UseActorRoll }
+SPIDN = "SPIDN" { UseActorPitch UseActorRoll }
+SPIDO = "SPIDO" { UseActorPitch UseActorRoll }
+SPIDP = "SPIDP" { UseActorPitch UseActorRoll }
+SPIDQ = "SPIDQ" { UseActorPitch UseActorRoll }
+SPIDR = "SPIDR" { UseActorPitch UseActorRoll }
+SPIDS = "SPIDS" { UseActorPitch UseActorRoll }
 
 // Doomguy
-playa = "playa" {}
-playb = "playb" {}
-playc = "playc" {}
-playd = "playd" {}
-playe = "playe" {}
-playf = "playf" {}
-playg = "playg" {}
-playh = "playh" { UseActorPitch UseActorRoll }
-playi = "playi" { UseActorPitch UseActorRoll }
-playj = "playj" { UseActorPitch UseActorRoll }
-playk = "playk" { UseActorPitch UseActorRoll }
-playl = "playl" { UseActorPitch UseActorRoll }
-playm = "playm" { UseActorPitch UseActorRoll }
-playn = "playn" { UseActorPitch UseActorRoll }
-playo = "playo" { UseActorPitch UseActorRoll }
-playp = "playp" { UseActorPitch UseActorRoll }
-playq = "playq" { UseActorPitch UseActorRoll }
-playr = "playr" { UseActorPitch UseActorRoll }
-plays = "plays" { UseActorPitch UseActorRoll }
-playt = "playt" { UseActorPitch UseActorRoll }
-playu = "playu" { UseActorPitch UseActorRoll }
-playv = "playv" { UseActorPitch UseActorRoll }
-playw = "playw" { UseActorPitch UseActorRoll }
+PLAYA = "PLAYA" {}
+PLAYB = "PLAYB" {}
+PLAYC = "PLAYC" {}
+PLAYD = "PLAYD" {}
+PLAYE = "PLAYE" {}
+PLAYF = "PLAYF" {}
+PLAYG = "PLAYG" {}
+PLAYH = "PLAYH" { UseActorPitch UseActorRoll }
+PLAYI = "PLAYI" { UseActorPitch UseActorRoll }
+PLAYJ = "PLAYJ" { UseActorPitch UseActorRoll }
+PLAYK = "PLAYK" { UseActorPitch UseActorRoll }
+PLAYL = "PLAYL" { UseActorPitch UseActorRoll }
+PLAYM = "PLAYM" { UseActorPitch UseActorRoll }
+PLAYN = "PLAYN" { UseActorPitch UseActorRoll }
+PLAYO = "PLAYO" { UseActorPitch UseActorRoll }
+PLAYP = "PLAYP" { UseActorPitch UseActorRoll }
+PLAYQ = "PLAYQ" { UseActorPitch UseActorRoll }
+PLAYR = "PLAYR" { UseActorPitch UseActorRoll }
+PLAYS = "PLAYS" { UseActorPitch UseActorRoll }
+PLAYT = "PLAYT" { UseActorPitch UseActorRoll }
+PLAYU = "PLAYU" { UseActorPitch UseActorRoll }
+PLAYV = "PLAYV" { UseActorPitch UseActorRoll }
+PLAYW = "PLAYW" { UseActorPitch UseActorRoll }
 
 //===========================================================================
 //
@@ -393,139 +395,139 @@ playw = "playw" { UseActorPitch UseActorRoll }
 //===========================================================================
 
 // Explosive barrel
-bar1a = "bar1a" { AngleOffset = 270 }
-bar1b = "bar1b" { AngleOffset = 270 }
-bexpa = "bexpa" { AngleOffset = 270 }
-bexpb = "bexpb" { AngleOffset = 270 }
-bexpc = "bexpc" { AngleOffset = 270 }
-bexpd = "bexpd" { AngleOffset = 270 }
-bexpe = "bexpe" { AngleOffset = 270 }
+BAR1A = "BAR1A" { AngleOffset = 270 }
+BAR1B = "BAR1B" { AngleOffset = 270 }
+BEXPA = "BEXPA" { AngleOffset = 270 }
+BEXPB = "BEXPB" { AngleOffset = 270 }
+BEXPC = "BEXPC" { AngleOffset = 270 }
+BEXPD = "BEXPD" { AngleOffset = 270 }
+BEXPE = "BEXPE" { AngleOffset = 270 }
 
 // Tall green column
-col1a = "col1a" {}
+COL1A = "COL1A" {}
 
 // Short green column
-col2a = "col2a" {}
+COL2A = "COL2A" {}
 
 // Tall red column
-col3a = "col3a" {}
+COL3A = "COL3A" {}
 
 // Short red column
-col4a = "col4a" {}
+COL4A = "COL4A" {}
 
 // Heart column
-col5a = "col5a" {}
-col5b = "col5b" {}
+COL5A = "COL5A" {}
+COL5B = "COL5B" {}
 
 // Skull column
-col6a = "col6a" {}
+COL6A = "COL6A" {}
 
 // Candle
-canda = "canda" {}
+CANDA = "CANDA" {}
 
 // Big tree
-tre2a = "tre2a" {}
+TRE2A = "TRE2A" {}
 
 // Column
-colua = "colua" {}
+COLUA = "COLUA" {}
 
 // Tech pillar
-eleca = "eleca" {}
+ELECA = "ELECA" {}
 
 // Bloody twitch
-gor1a = "gor1a" {}
-gor1b = "gor1b" {}
-gor1c = "gor1c" {}
+GOR1A = "GOR1A" {}
+GOR1B = "GOR1B" {}
+GOR1C = "GOR1C" {}
 
 // Meat 2
-gor2a = "gor2a" {}
+GOR2A = "GOR2A" {}
 
 // Meat 3
-gor3a = "gor3a" {}
+GOR3A = "GOR3A" {}
 
 // Meat 4
-gor4a = "gor4a" {}
+GOR4A = "GOR4A" {}
 
 // Meat 5
-gor5a = "gor5a" {}
+GOR5A = "GOR5A" {}
 
 // Stalagtite
-smita = "smita" {}
+SMITA = "SMITA" {}
 
 // Gibs (crushed)
-pol5a = "pol5a" {}
+POL5A = "POL5A" {}
 
 // Dead on a stick
-pol1a = "pol1a" {}
+POL1A = "POL1A" {}
 
 // Heads (plural!) on a stick
-pol2a = "pol2a" {}
+POL2A = "POL2A" {}
 
 // Evil eye
-ceyea = "ceyea" {}
-ceyeb = "ceyeb" {}
-ceyec = "ceyec" {}
+CEYEA = "CEYEA" {}
+CEYEB = "CEYEB" {}
+CEYEC = "CEYEC" {}
 
 // Candelabra
-cbraa = "cbraa" {}
+CBRAA = "CBRAA" {}
 
 // Floating skulls
-fskua = "fskua" {}
-fskub = "fskub" {}
-fskuc = "fskuc" {}
+FSKUA = "FSKUA" {}
+FSKUB = "FSKUB" {}
+FSKUC = "FSKUC" {}
 
 // Torch tree
-tre1a = "tre1a" {}
+TRE1A = "TRE1A" {}
 
 // Head candles
-pol3a = "pol3a" {}
-pol3b = "pol3b" {}
+POL3A = "POL3A" {}
+POL3B = "POL3B" {}
 
 // Head on a stick
-pol4a = "pol4a" {}
+POL4A = "POL4A" {}
 
 // Short red torch
-smrta = "smrta" {}
-smrtb = "smrtb" {}
-smrtc = "smrtc" {}
-smrtd = "smrtd" {}
+SMRTA = "SMRTA" {}
+SMRTB = "SMRTB" {}
+SMRTC = "SMRTC" {}
+SMRTD = "SMRTD" {}
 
 // Short blue torch
-smbta = "smbta" {}
-smbtb = "smbtb" {}
-smbtc = "smbtc" {}
-smbtd = "smbtd" {}
+SMBTA = "SMBTA" {}
+SMBTB = "SMBTB" {}
+SMBTC = "SMBTC" {}
+SMBTD = "SMBTD" {}
 
 // Short green torch
-smgta = "smgta" {}
-smgtb = "smgtb" {}
-smgtc = "smgtc" {}
-smgtd = "smgtd" {}
+SMGTA = "SMGTA" {}
+SMGTB = "SMGTB" {}
+SMGTC = "SMGTC" {}
+SMGTD = "SMGTD" {}
 
 // Still alive on a stick
-pol6a = "pol6a" {}
-pol6b = "pol6b" {}
+POL6A = "POL6A" {}
+POL6B = "POL6B" {}
 
 // Green torch
-tgrna = "tgrna" {}
-tgrnb = "tgrnb" {}
-tgrnc = "tgrnc" {}
-tgrnd = "tgrnd" {}
+TGRNA = "TGRNA" {}
+TGRNB = "TGRNB" {}
+TGRNC = "TGRNC" {}
+TGRND = "TGRND" {}
 
 // Blue torch
-tblua = "tblua" {}
-tblub = "tblub" {}
-tbluc = "tbluc" {}
-tblud = "tblud" {}
+TBLUA = "TBLUA" {}
+TBLUB = "TBLUB" {}
+TBLUC = "TBLUC" {}
+TBLUD = "TBLUD" {}
 
 // Red torch
-treda = "treda" {}
-tredb = "tredb" {}
-tredc = "tredc" {}
-tredd = "tredd" {}
+TREDA = "TREDA" {}
+TREDB = "TREDB" {}
+TREDC = "TREDC" {}
+TREDD = "TREDD" {}
 
 // Grey stalagmite (unused Doom sprite)
-smt2a = "smt2a" {}
+SMT2A = "SMT2A" {}
 
 //===========================================================================
 //
@@ -534,56 +536,58 @@ smt2a = "smt2a" {}
 //===========================================================================
 
 // Bullet puff
-puffa = "puffa" {}
-puffb = "puffb" {}
-puffc = "puffc" {}
-puffd = "puffd" {}
+PUFFA = "PUFFA" {}
+PUFFB = "PUFFB" {}
+PUFFC = "PUFFC" {}
+PUFFD = "PUFFD" {}
 
 // Blood
-bluda = "bluda" {}
-bludb = "bludb" {}
-bludc = "bludc" {}
+BLUDA = "BLUDA" {}
+BLUDB = "BLUDB" {}
+BLUDC = "BLUDC" {}
 
 // Rocket explosion
-mislb = "mislb" { AngleOffset = 270 }
-mislc = "mislc" {}
-misld = "misld" {}
+// (We're intentionally using a different sprite - VISL - for the voxelized explosion)
+// (This is necessary to allow the voxelized explosion to be optional)
+VISLB = "VISLB" { AngleOffset = 270 }
+VISLC = "VISLC" {}
+VISLD = "VISLD" {}
 
 /*
 // Plasma explosion
-//plsea = "plsea" { UseActorPitch }
-plseb = "plseb" { UseActorPitch }
-plsec = "plsec" { UseActorPitch }
-plsed = "plsed" { UseActorPitch }
-plsee = "plsee" { UseActorPitch }
+//PLSEA = "PLSEA" { UseActorPitch }
+PLSEB = "PLSEB" { UseActorPitch }
+PLSEC = "PLSEC" { UseActorPitch }
+PLSED = "PLSED" { UseActorPitch }
+PLSEE = "PLSEE" { UseActorPitch }
 
 // BFG explosion
-bfe1a = "bfe1a" {}
-bfe1b = "bfe1b" {}
-bfe1c = "bfe1c" {}
-bfe1d = "bfe1d" {}
-bfe1e = "bfe1e" {}
-bfe1f = "bfe1f" {}
-bfe2a = "bfe2a" {}
-bfe2b = "bfe2b" {}
-bfe2c = "bfe2c" {}
+BFE1A = "BFE1A" {}
+BFE1B = "BFE1B" {}
+BFE1C = "BFE1C" {}
+BFE1D = "BFE1D" {}
+BFE1E = "BFE1E" {}
+BFE1F = "BFE1F" {}
+BFE2A = "BFE2A" {}
+BFE2B = "BFE2B" {}
+BFE2C = "BFE2C" {}
 
 // Teleport fog
-tfoga = "tfoga"
-tfogb = "tfogb"
-tfogc = "tfogc"
-tfogd = "tfogd"
-tfoge = "tfoge"
-tfogf = "tfogf"
-tfogg = "tfogg"
-tfogh = "tfogh"
-tfogi = "tfogi"
-tfogj = "tfogj"
+TFOGA = "TFOGA"
+TFOGB = "TFOGB"
+TFOGC = "TFOGC"
+TFOGD = "TFOGD"
+TFOGE = "TFOGE"
+TFOGF = "TFOGF"
+TFOGG = "TFOGG"
+TFOGH = "TFOGH"
+TFOGI = "TFOGI"
+TFOGJ = "TFOGJ"
 
 // Item respawn fog
-ifoga = "ifoga"
-ifogb = "ifogb"
-ifogc = "ifogc"
-ifogd = "ifogd"
-ifoge = "ifoge"
+IFOGA = "IFOGA"
+IFOGB = "IFOGB"
+IFOGC = "IFOGC"
+IFOGD = "IFOGD"
+IFOGE = "IFOGE"
 */

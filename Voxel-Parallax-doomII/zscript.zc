@@ -2,9 +2,9 @@
 //
 // CHEELLO VOXEL DOOM
 //
-// ZScript code: Copyright (C) 2022 - 2023 Nash Muhandes
+// ZScript code: Copyright (C) 2022 - 2024 Nash Muhandes
 //
-// License: MIT
+// License: GPL v3.0
 //
 //===========================================================================
 
@@ -21,4 +21,5 @@ version "4.5"
 #include "zscript/CheelloVox/CheelloMonsterMixin.zc"
 #include "zscript/CheelloVox/CheelloMonstersDoom1.zc"
 #include "zscript/CheelloVox/CheelloBulletPuff.zc"
+#include "zscript/CheelloVox/CheelloSpheres.zc"
 #include "zscript/CheelloVox/CheelloOptionMenu.zc"

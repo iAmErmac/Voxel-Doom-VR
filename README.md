@@ -77,3 +77,8 @@ To install:
 * Cheello - All the voxel artworks
 * Nash - Zscript for Voxel Doom and Sprite Shadow mod
 * Ermac - Code modifications for backward compatibility and SpriteShadow mod for Voxel Doom
+
+## Licenses
+
+* Voxel Doom II (By Cheello and Nash) is licensed under GPL v3.0
+* Voxel Doom II SpriteShadow (By Ermac) is licensed under MIT License

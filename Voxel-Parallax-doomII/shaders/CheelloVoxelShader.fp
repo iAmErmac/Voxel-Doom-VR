@@ -2,7 +2,7 @@
 //
 // CHEELLO VOXEL DOOM MASTER SHADER
 //
-// License: MIT
+// License: GPL v3.0
 //
 //===========================================================================
 

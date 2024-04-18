@@ -2,9 +2,9 @@
 //
 // CHEELLO VOXEL DOOM
 //
-// ZScript code: Copyright (C) 2022 - 2023 Nash Muhandes
+// ZScript code: Copyright (C) 2022 - 2024 Nash Muhandes
 //
-// License: MIT
+// License: GPL v3.0
 //
 //===========================================================================
 
@@ -31,9 +31,16 @@ class CheelloVoxHandler : EventHandler
 
 	override void WorldThingDied(WorldEvent e)
 	{
+		if (!e.Thing)
+			return;
+
+		let mo = e.Thing;
+
 		// make monsters face the player who killed them
-		if (cheello_monsterfaceskiller && e.Thing && e.Thing.bIsMonster && e.Thing.Target && e.Thing.Target is "PlayerPawn")
-			e.Thing.Angle = e.Thing.AngleTo(e.Thing.Target);
+		if (cheello_monsterfaceskiller && mo && mo.bIsMonster && mo.Target && mo.Target is "PlayerPawn")
+			mo.Angle = mo.AngleTo(mo.Target);
+
+		CheelloVoxStatics.FixZFighting(mo);
 	}
 
 	override void WorldThingSpawned(WorldEvent e)
